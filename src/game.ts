@@ -114,7 +114,7 @@ myVideoTexture.loop = true
 
 //constant_01
 let constant_01 = new Entity()
-let constant_01Path:string = "models/cubes_04.glb"
+let constant_01Path:string = "models/basescene_01.glb"
     constant_01.addComponent(new GLTFShape(constant_01Path))
     constant_01.addComponent(new Transform({
         position: new Vector3(0, 0, 0),
@@ -138,53 +138,53 @@ const switch1 = new Entity()
 engine.addEntity(switch1)
 
 //screen_01
-const screen_031 = new Entity()
-      screen_031.addComponent(new PlaneShape())
-      screen_031.getComponent(PlaneShape).withCollisions = false
-      screen_031.addComponent(sheet02)
-      screen_031.addComponent(new Transform({
+const screen_011 = new Entity()
+      screen_011.addComponent(new PlaneShape())
+      screen_011.getComponent(PlaneShape).withCollisions = false
+      screen_011.addComponent(sheet02)
+      screen_011.addComponent(new Transform({
           position: new Vector3(60.9, 41.5, 64),
           scale: new Vector3(121.8, 82, 1),
           rotation: Quaternion.Euler(180, 270, 180)
 }))
-engine.addEntity(screen_031)
+engine.addEntity(screen_011)
 
 //screen 02
-const screen_032 = new Entity()
-      screen_032.addComponent(new PlaneShape())
-      screen_032.getComponent(PlaneShape).withCollisions = false
-      screen_032.addComponent(sheet02)
-      screen_032.addComponent(new Transform({
+const screen_012 = new Entity()
+      screen_012.addComponent(new PlaneShape())
+      screen_012.getComponent(PlaneShape).withCollisions = false
+      screen_012.addComponent(sheet02)
+      screen_012.addComponent(new Transform({
           position: new Vector3(3.1, 41.5, 64),
           scale: new Vector3(121.8, 82, 1),
           rotation: Quaternion.Euler(180, 90, 180)
 }))
-engine.addEntity(screen_032)
+engine.addEntity(screen_012)
 
 //screen 03
-const screen_033 = new Entity()
-      screen_033.addComponent(new PlaneShape())
-      screen_033.getComponent(PlaneShape).withCollisions = false
-      screen_033.addComponent(sheet01)
-      screen_033.addComponent(new Transform({
+const screen_013 = new Entity()
+      screen_013.addComponent(new PlaneShape())
+      screen_013.getComponent(PlaneShape).withCollisions = false
+      screen_013.addComponent(sheet01)
+      screen_013.addComponent(new Transform({
           position: new Vector3(32, 41.5, 124.9),
           scale: new Vector3(57.8, 82, 1),
           rotation: Quaternion.Euler(180, 0, 180)
 }))
-engine.addEntity(screen_033)
+engine.addEntity(screen_013)
 
 //screen 04
-const screen_034 = new Entity()
-      screen_034.addComponent(new PlaneShape())
-      screen_034.getComponent(PlaneShape).withCollisions = false
-      screen_034.addComponent(sheet02)
-      screen_034.addComponent(
+const screen_014 = new Entity()
+      screen_014.addComponent(new PlaneShape())
+      screen_014.getComponent(PlaneShape).withCollisions = false
+      screen_014.addComponent(sheet02)
+      screen_014.addComponent(
         new Transform({
           position: new Vector3(32, 41.5, 3.1),
           scale: new Vector3(57.8, 82, 1),
           rotation: Quaternion.Euler(180, 180, 180)
 }))
-engine.addEntity(screen_034)
+engine.addEntity(screen_014)
 
 myVideoTexture2.play()
 myVideoTexture2.loop = true
@@ -241,3 +241,339 @@ engine.addEntity(screen_024)
 
 myVideoTexture3.play()
 myVideoTexture3.loop = true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//CUBES
+
+//Courtyard 01 (SOUTH)
+
+//cube_01
+let cube_01 = new Entity()
+let cube_01Path:string = "models/cube_01.glb"
+    cube_01.addComponent(new GLTFShape(cube_01Path))
+    cube_01.addComponent(new Transform({
+        position: new Vector3(51.8, 0, 100.8),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 270, 0)
+}))
+engine.addEntity(cube_01)
+
+//cube_02
+let cube_02 = new Entity()
+let cube_02Path:string = "models/cube_01.glb"
+    cube_02.addComponent(new GLTFShape(cube_02Path))
+    cube_02.addComponent(new Transform({
+        position: new Vector3(51.8, 0, 84.8),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 270, 0)
+}))
+engine.addEntity(cube_02)
+
+//cube_03
+let cube_03 = new Entity()
+let cube_03Path:string = "models/cube_01.glb"
+    cube_03.addComponent(new GLTFShape(cube_03Path))
+    cube_03.addComponent(new Transform({
+        position: new Vector3(51.8, 0, 68.8),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 270, 0)
+}))
+engine.addEntity(cube_03)
+
+//cube_04
+let cube_04 = new Entity()
+let cube_04Path:string = "models/cube_01.glb"
+    cube_04.addComponent(new GLTFShape(cube_04Path))
+    cube_04.addComponent(new Transform({
+        position: new Vector3(51.8, 0, 52.8),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 270, 0)
+}))
+engine.addEntity(cube_04)
+
+//cube_05
+let cube_05 = new Entity()
+let cube_05Path:string = "models/cube_01.glb"
+    cube_05.addComponent(new GLTFShape(cube_05Path))
+    cube_05.addComponent(new Transform({
+        position: new Vector3(51.8, 0, 36.8),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 270, 0)
+}))
+engine.addEntity(cube_05)
+
+//cube_06
+let cube_06 = new Entity()
+let cube_06Path:string = "models/cube_01.glb"
+    cube_06.addComponent(new GLTFShape(cube_06Path))
+    cube_06.addComponent(new Transform({
+        position: new Vector3(51.8, 0, 20.8),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 270, 0)
+}))
+engine.addEntity(cube_06)
+
+//cube_07
+let cube_07 = new Entity()
+let cube_07Path:string = "models/cube_01.glb"
+    cube_07.addComponent(new GLTFShape(cube_07Path))
+    cube_07.addComponent(new Transform({
+        position: new Vector3(36.7, 0, 12.2),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 0, 0)
+}))
+engine.addEntity(cube_07)
+
+//cube_08
+let cube_08 = new Entity()
+let cube_08Path:string = "models/cube_01.glb"
+    cube_08.addComponent(new GLTFShape(cube_08Path))
+    cube_08.addComponent(new Transform({
+        position: new Vector3(20.7, 0, 12.2),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 0, 0)
+}))
+engine.addEntity(cube_08)
+
+//cube_09
+let cube_09 = new Entity()
+let cube_09Path:string = "models/cube_01.glb"
+    cube_09.addComponent(new GLTFShape(cube_09Path))
+    cube_09.addComponent(new Transform({
+        position: new Vector3(12.2, 0, 27.2),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 90, 0)
+}))
+engine.addEntity(cube_09)
+
+//cube_10
+let cube_10 = new Entity()
+let cube_10Path:string = "models/cube_01.glb"
+    cube_10.addComponent(new GLTFShape(cube_10Path))
+    cube_10.addComponent(new Transform({
+        position: new Vector3(12.2, 0, 43.2),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 90, 0)
+}))
+engine.addEntity(cube_10)
+
+//cube_11
+let cube_11 = new Entity()
+let cube_11Path:string = "models/cube_01.glb"
+    cube_11.addComponent(new GLTFShape(cube_11Path))
+    cube_11.addComponent(new Transform({
+        position: new Vector3(12.2, 0, 59.2),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 90, 0)
+}))
+engine.addEntity(cube_11)
+
+//cube_12
+let cube_12 = new Entity()
+let cube_12Path:string = "models/cube_01.glb"
+    cube_12.addComponent(new GLTFShape(cube_12Path))
+    cube_12.addComponent(new Transform({
+        position: new Vector3(12.2, 0, 75.2),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 90, 0)
+}))
+engine.addEntity(cube_12)
+
+//cube_13
+let cube_13 = new Entity()
+let cube_13Path:string = "models/cube_01.glb"
+    cube_13.addComponent(new GLTFShape(cube_13Path))
+    cube_13.addComponent(new Transform({
+        position: new Vector3(12.2, 0, 91.2),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 90, 0)
+}))
+engine.addEntity(cube_13)
+
+//cube_14
+let cube_14 = new Entity()
+let cube_14Path:string = "models/cube_01.glb"
+    cube_14.addComponent(new GLTFShape(cube_14Path))
+    cube_14.addComponent(new Transform({
+        position: new Vector3(12.2, 0, 107.2),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 90, 0)
+}))
+engine.addEntity(cube_14)
+
+
+
+
+
+//Courtyard 02 (NORTH)
+
+
+//cube_15
+let cube_15 = new Entity()
+let cube_15Path:string = "models/cube_02.glb"
+    cube_15.addComponent(new GLTFShape(cube_15Path))
+    cube_15.addComponent(new Transform({
+        position: new Vector3(9.8, -.125, 215.8),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 270, 0)
+}))
+engine.addEntity(cube_15)
+
+//cube_16
+let cube_16 = new Entity()
+let cube_16Path:string = "models/cube_02.glb"
+    cube_16.addComponent(new GLTFShape(cube_16Path))
+    cube_16.addComponent(new Transform({
+        position: new Vector3(9.8, -.125, 231.8),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 270, 0)
+}))
+engine.addEntity(cube_16)
+
+//cube_17
+let cube_17 = new Entity()
+let cube_17Path:string = "models/cube_02.glb"
+    cube_17.addComponent(new GLTFShape(cube_17Path))
+    cube_17.addComponent(new Transform({
+        position: new Vector3(9.8, -.125, 247.8),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 270, 0)
+}))
+engine.addEntity(cube_17)
+
+//cube_18
+let cube_18 = new Entity()
+let cube_18Path:string = "models/cube_02.glb"
+    cube_18.addComponent(new GLTFShape(cube_18Path))
+    cube_18.addComponent(new Transform({
+        position: new Vector3(9.8, -.125, 263.8),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 270, 0)
+}))
+engine.addEntity(cube_18)
+
+//cube_19
+let cube_19 = new Entity()
+let cube_19Path:string = "models/cube_02.glb"
+    cube_19.addComponent(new GLTFShape(cube_19Path))
+    cube_19.addComponent(new Transform({
+        position: new Vector3(9.8, -.125, 279.8),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 270, 0)
+}))
+engine.addEntity(cube_19)
+
+//cube_20
+let cube_20 = new Entity()
+let cube_20Path:string = "models/cube_02.glb"
+    cube_20.addComponent(new GLTFShape(cube_20Path))
+    cube_20.addComponent(new Transform({
+        position: new Vector3(9.8, -.125, 295.8),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 270, 0)
+}))
+engine.addEntity(cube_20)
+
+//cube_21
+let cube_21 = new Entity()
+let cube_21Path:string = "models/cube_02.glb"
+    cube_21.addComponent(new GLTFShape(cube_21Path))
+    cube_21.addComponent(new Transform({
+        position: new Vector3(23.8, -.125, 310.2),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 0, 0)
+}))
+engine.addEntity(cube_21)
+
+//cube_22
+let cube_22 = new Entity()
+let cube_22Path:string = "models/cube_02.glb"
+    cube_22.addComponent(new GLTFShape(cube_22Path))
+    cube_22.addComponent(new Transform({
+        position: new Vector3(39.8, -.125, 310.2),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 0, 0)
+}))
+engine.addEntity(cube_22)
+
+//cube_23
+let cube_23 = new Entity()
+let cube_23Path:string = "models/cube_02.glb"
+    cube_23.addComponent(new GLTFShape(cube_23Path))
+    cube_23.addComponent(new Transform({
+        position: new Vector3(54.2, -.125, 296.2),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 90, 0)
+}))
+engine.addEntity(cube_23)
+
+//cube_24
+let cube_24 = new Entity()
+let cube_24Path:string = "models/cube_02.glb"
+    cube_24.addComponent(new GLTFShape(cube_24Path))
+    cube_24.addComponent(new Transform({
+        position: new Vector3(54.2, -.125, 280.2),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 90, 0)
+}))
+engine.addEntity(cube_24)
+
+//cube_25
+let cube_25 = new Entity()
+let cube_25Path:string = "models/cube_02.glb"
+    cube_25.addComponent(new GLTFShape(cube_25Path))
+    cube_25.addComponent(new Transform({
+        position: new Vector3(54.2, -.125, 264.2),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 90, 0)
+}))
+engine.addEntity(cube_25)
+
+//cube_26
+let cube_26 = new Entity()
+let cube_26Path:string = "models/cube_02.glb"
+    cube_26.addComponent(new GLTFShape(cube_26Path))
+    cube_26.addComponent(new Transform({
+        position: new Vector3(54.2, -.125, 248.2),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 90, 0)
+}))
+engine.addEntity(cube_26)
+
+//cube_27
+let cube_27 = new Entity()
+let cube_27Path:string = "models/cube_02.glb"
+    cube_27.addComponent(new GLTFShape(cube_27Path))
+    cube_27.addComponent(new Transform({
+        position: new Vector3(54.2, -.125, 232.2),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 90, 0)
+}))
+engine.addEntity(cube_27)
+
+//cube_28
+let cube_28 = new Entity()
+let cube_28Path:string = "models/cube_02.glb"
+    cube_28.addComponent(new GLTFShape(cube_28Path))
+    cube_28.addComponent(new Transform({
+        position: new Vector3(54.2, -.125, 216.2),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 90, 0)
+}))
+engine.addEntity(cube_28)
