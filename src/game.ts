@@ -24,7 +24,6 @@ const pond = new AudioSource(sound03)
 //Materials
 
 // aiscape
-
 const sheet01 = new Material()
       sheet01.albedoTexture = myVideoTexture2
       sheet01.castShadows = false
@@ -64,29 +63,58 @@ const sheet04 = new Material()
 const myMaterial = new Material()
       myMaterial.albedoTexture = myVideoTexture
       myMaterial.alphaTexture = alphaTexture2
-      myMaterial.roughness = .05
-      myMaterial.specularIntensity = 1
-      myMaterial.metallic = -1
+      myMaterial.roughness = 1
+      myMaterial.specularIntensity = 0
+      myMaterial.metallic = 0
+
+//Material 01 - Cycles white
+const material01 = new Material()
+      material01.albedoColor = Color3.White()
+      material01.metallic = 0
+      material01.roughness = 1
+
+      class ColorSystem1 {
+                  fraction:number = 0
+                  direction: number = 1
+
+                  update(dt:number){
+                      this.fraction += this.direction * dt * 0.25
+                      if(this.fraction > 1){
+                          this.fraction = 1
+                          this.direction = -1
+
+                      } else if(this.fraction < 0){
+                        this.fraction = 0
+                        this.direction = 1
+
+                    }
+                      material01.albedoColor = Color4.Lerp(new Color4(3, 3, 3, 1), new Color4(1.5, 1.5, 1.5, .5), this.fraction)
+                  }
+              }
+engine.addSystem(new ColorSystem1())
 
 // water
-const pondwater1 = new Entity()
-      pondwater1.addComponent(new PlaneShape())
-      pondwater1.addComponent(myMaterial)
-      pondwater1.addComponent(pond)
-      pondwater1.getComponent(PlaneShape).withCollisions = false
-      pondwater1.addComponent(new Transform({
-          position: new Vector3(32, .425, 160),
+const water1 = new Entity()
+      water1.addComponent(new PlaneShape())
+      water1.addComponent(myMaterial)
+      water1.addComponent(pond)
+      water1.getComponent(PlaneShape).withCollisions = false
+      water1.addComponent(new Transform({
+          position: new Vector3(32, .5, 160),
           scale: new Vector3(316, 60, 1),
           rotation: Quaternion.Euler(90, 90, 0)
 }))
-engine.addEntity(pondwater1)
+engine.addEntity(water1)
 
+pond.playing = true
+pond.loop = true
+pond.volume = 0.25
 myVideoTexture.play()
 myVideoTexture.loop = true
 
 //constant_01
 let constant_01 = new Entity()
-let constant_01Path:string = "models/cubes_02.glb"
+let constant_01Path:string = "models/cubes_04.glb"
     constant_01.addComponent(new GLTFShape(constant_01Path))
     constant_01.addComponent(new Transform({
         position: new Vector3(0, 0, 0),
@@ -95,16 +123,19 @@ let constant_01Path:string = "models/cubes_02.glb"
 }))
 engine.addEntity(constant_01)
 
-//constant_02
-let constant_02 = new Entity()
-let constant_02Path:string = "models/cubes_03.glb"
-    constant_02.addComponent(new GLTFShape(constant_02Path))
-    constant_02.addComponent(new Transform({
-        position: new Vector3(0, 0, 0),
-        scale: new Vector3(1, 1, 1),
-        rotation: Quaternion.Euler(0, 180, 0)
+
+
+// switch (trigger signifyer)
+const switch1 = new Entity()
+      switch1.addComponent(new BoxShape())
+      switch1.getComponent(BoxShape).withCollisions = false
+      switch1.getComponent(BoxShape).visible = true
+      switch1.addComponent(material01)
+      switch1.addComponent(new Transform({
+              position: new Vector3(32, 4, 160),
+              scale: new Vector3(2, 2, 2)
 }))
-engine.addEntity(constant_02)
+engine.addEntity(switch1)
 
 //screen_01
 const screen_031 = new Entity()
@@ -173,13 +204,13 @@ engine.addEntity(screen_021)
 
 //screen 06
 const screen_022 = new Entity()
-    screen_022.addComponent(new PlaneShape())
-    screen_022.getComponent(PlaneShape).withCollisions = false
-    screen_022.addComponent(sheet03)
-    screen_022.addComponent(new Transform({
-        position: new Vector3(3.1, 41.5, 256),
-        scale: new Vector3(121.8, 82, 1),
-        rotation: Quaternion.Euler(180, 90, 180)
+      screen_022.addComponent(new PlaneShape())
+      screen_022.getComponent(PlaneShape).withCollisions = false
+      screen_022.addComponent(sheet03)
+      screen_022.addComponent(new Transform({
+          position: new Vector3(3.1, 41.5, 256),
+          scale: new Vector3(121.8, 82, 1),
+          rotation: Quaternion.Euler(180, 90, 180)
 }))
 engine.addEntity(screen_022)
 

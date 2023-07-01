@@ -5,12 +5,9 @@
     "navmapThumbnail": "images/scene-thumbnail.png",
     "favicon": "favicon_asset"
   },
-  "owner": "",
-  "worldConfiguration" : {
-    "name": "ile.dcl.eth"
-  },
+  "owner": "MESH",
   "contact": {
-    "name": "Luke Escobar",
+    "name": "＼(^o^)／",
     "email": "lukeeescobar@gmail.com"
   },
   "main": "bin/game.js",
@@ -45,7 +42,7 @@
       "name": "spawn1",
       "default": true,
       "position": {
-        "x": 32,
+        "x": 26,
         "y": 2,
         "z": 160
       },
