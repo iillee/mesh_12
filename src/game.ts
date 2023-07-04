@@ -2,9 +2,9 @@ import * as utils from '@dcl/ecs-scene-utils'
 import { movePlayerTo } from '@decentraland/RestrictedActions'
 
 //video Clips
-const myVideoClip = new VideoClip("videos/water.mp4")
-const aiscape_01= new VideoClip("videos/aiscape_01.mp4")
-const aiscape_02= new VideoClip("videos/aiscape_02.mp4")
+const myVideoClip = new VideoClip("videos/PIXEL2.mp4")
+const aiscape_01= new VideoClip("videos/TAIGA_01.mp4")
+const aiscape_02= new VideoClip("videos/TAIGA_02.mp4")
 
 const myVideoTexture = new VideoTexture(myVideoClip)
 const myVideoTexture2 = new VideoTexture(aiscape_01)
@@ -245,6 +245,409 @@ myVideoTexture3.loop = true
 
 
 
+//Shells
+
+let shellPath:string = "models/shell_01.glb"
+
+//Courtyard 01 (SOUTH)
+
+//shell_01
+let shell_01 = new Entity()
+    shell_01.addComponent(new GLTFShape(shellPath))
+    shell_01.addComponent(new Transform({
+        position: new Vector3(48, 0, 96),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 180, 0)
+    }))
+    shell_01.addComponent(
+      new OnPointerDown(() => {
+        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+    }))
+engine.addEntity(shell_01)
+
+//shell_02
+let shell_02 = new Entity()
+    shell_02.addComponent(new GLTFShape(shellPath))
+    shell_02.addComponent(new Transform({
+        position: new Vector3(48, 0, 80),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 180, 0)
+    }))
+    shell_02.addComponent(
+      new OnPointerDown(() => {
+        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+    }))
+engine.addEntity(shell_02)
+
+//shell_03
+let shell_03 = new Entity()
+    shell_03.addComponent(new GLTFShape(shellPath))
+    shell_03.addComponent(new Transform({
+        position: new Vector3(48, 0, 64),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 180, 0)
+    }))
+    shell_03.addComponent(
+      new OnPointerDown(() => {
+        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+    }))
+engine.addEntity(shell_03)
+
+//shell_04
+let shell_04 = new Entity()
+    shell_04.addComponent(new GLTFShape(shellPath))
+    shell_04.addComponent(new Transform({
+        position: new Vector3(48, 0, 48),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 180, 0)
+    }))
+    shell_04.addComponent(
+      new OnPointerDown(() => {
+        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+    }))
+engine.addEntity(shell_04)
+
+//shell_05
+let shell_05 = new Entity()
+    shell_05.addComponent(new GLTFShape(shellPath))
+    shell_05.addComponent(new Transform({
+        position: new Vector3(48, 0, 32),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 180, 0)
+    }))
+    shell_05.addComponent(
+      new OnPointerDown(() => {
+        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+    }))
+engine.addEntity(shell_05)
+
+//shell_06
+let shell_06 = new Entity()
+    shell_06.addComponent(new GLTFShape(shellPath))
+    shell_06.addComponent(new Transform({
+        position: new Vector3(48, 0, 16),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 180, 0)
+    }))
+    shell_06.addComponent(
+      new OnPointerDown(() => {
+        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+    }))
+engine.addEntity(shell_06)
+
+//shell_07
+let shell_07 = new Entity()
+    shell_07.addComponent(new GLTFShape(shellPath))
+    shell_07.addComponent(new Transform({
+        position: new Vector3(32, 0, 16),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 270, 0)
+    }))
+    shell_07.addComponent(
+      new OnPointerDown(() => {
+        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+    }))
+engine.addEntity(shell_07)
+
+//shell_08
+let shell_08 = new Entity()
+    shell_08.addComponent(new GLTFShape(shellPath))
+    shell_08.addComponent(new Transform({
+        position: new Vector3(16, 0, 16),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 270, 0)
+    }))
+    shell_08.addComponent(
+      new OnPointerDown(() => {
+        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+    }))
+engine.addEntity(shell_08)
+
+//shell_09
+let shell_09 = new Entity()
+    shell_09.addComponent(new GLTFShape(shellPath))
+    shell_09.addComponent(new Transform({
+        position: new Vector3(16, 0, 32),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 0, 0)
+    }))
+    shell_09.addComponent(
+      new OnPointerDown(() => {
+        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+    }))
+engine.addEntity(shell_09)
+
+//shell_10
+let shell_10 = new Entity()
+    shell_10.addComponent(new GLTFShape(shellPath))
+    shell_10.addComponent(new Transform({
+        position: new Vector3(16, 0, 48),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 0, 0)
+    }))
+    shell_10.addComponent(
+      new OnPointerDown(() => {
+        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+    }))
+engine.addEntity(shell_10)
+
+//shell_11
+let shell_11 = new Entity()
+    shell_11.addComponent(new GLTFShape(shellPath))
+    shell_11.addComponent(new Transform({
+        position: new Vector3(16, 0, 64),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 0, 0)
+    }))
+    shell_11.addComponent(
+      new OnPointerDown(() => {
+        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+    }))
+engine.addEntity(shell_11)
+
+//shell_12
+let shell_12 = new Entity()
+    shell_12.addComponent(new GLTFShape(shellPath))
+    shell_12.addComponent(new Transform({
+        position: new Vector3(16, 0, 80),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 0, 0)
+    }))
+    shell_12.addComponent(
+      new OnPointerDown(() => {
+        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+    }))
+engine.addEntity(shell_12)
+
+//shell_13
+let shell_13 = new Entity()
+    shell_13.addComponent(new GLTFShape(shellPath))
+    shell_13.addComponent(new Transform({
+        position: new Vector3(16, 0, 96),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 0, 0)
+    }))
+    shell_13.addComponent(
+      new OnPointerDown(() => {
+        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+    }))
+engine.addEntity(shell_13)
+
+//shell_14
+let shell_14 = new Entity()
+    shell_14.addComponent(new GLTFShape(shellPath))
+    shell_14.addComponent(new Transform({
+        position: new Vector3(16, 0, 112),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 0, 0)
+    }))
+    shell_14.addComponent(
+      new OnPointerDown(() => {
+        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+    }))
+engine.addEntity(shell_14)
+
+
+//Courtyard 02 (NORTH)
+
+
+//shell_15
+let shell_15 = new Entity()
+    shell_15.addComponent(new GLTFShape(shellPath))
+    shell_15.addComponent(new Transform({
+        position: new Vector3(16, 0, 224),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 0, 0)
+    }))
+    shell_15.addComponent(
+      new OnPointerDown(() => {
+        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+    }))
+engine.addEntity(shell_15)
+
+//shell_16
+let shell_16 = new Entity()
+    shell_16.addComponent(new GLTFShape(shellPath))
+    shell_16.addComponent(new Transform({
+        position: new Vector3(16, 0, 240),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 0, 0)
+    }))
+    shell_16.addComponent(
+      new OnPointerDown(() => {
+        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+    }))
+engine.addEntity(shell_16)
+
+//shell_17
+let shell_17 = new Entity()
+    shell_17.addComponent(new GLTFShape(shellPath))
+    shell_17.addComponent(new Transform({
+        position: new Vector3(16, 0, 256),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 0, 0)
+    }))
+    shell_17.addComponent(
+      new OnPointerDown(() => {
+        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+    }))
+engine.addEntity(shell_17)
+
+//shell_18
+let shell_18 = new Entity()
+    shell_18.addComponent(new GLTFShape(shellPath))
+    shell_18.addComponent(new Transform({
+        position: new Vector3(16, 0, 272),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 0, 0)
+    }))
+    shell_18.addComponent(
+      new OnPointerDown(() => {
+        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+    }))
+engine.addEntity(shell_18)
+
+//shell_19
+let shell_19 = new Entity()
+    shell_19.addComponent(new GLTFShape(shellPath))
+    shell_19.addComponent(new Transform({
+        position: new Vector3(16, 0, 288),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 0, 0)
+    }))
+    shell_19.addComponent(
+      new OnPointerDown(() => {
+        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+    }))
+engine.addEntity(shell_19)
+
+//shell_20
+let shell_20 = new Entity()
+    shell_20.addComponent(new GLTFShape(shellPath))
+    shell_20.addComponent(new Transform({
+        position: new Vector3(16, 0, 304),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 0, 0)
+    }))
+    shell_20.addComponent(
+      new OnPointerDown(() => {
+        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+    }))
+engine.addEntity(shell_20)
+
+//shell_21
+let shell_21 = new Entity()
+    shell_21.addComponent(new GLTFShape(shellPath))
+    shell_21.addComponent(new Transform({
+        position: new Vector3(32, 0, 304),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 90, 0)
+    }))
+    shell_21.addComponent(
+      new OnPointerDown(() => {
+        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+    }))
+engine.addEntity(shell_21)
+
+//shell_22
+let shell_22 = new Entity()
+    shell_22.addComponent(new GLTFShape(shellPath))
+    shell_22.addComponent(new Transform({
+        position: new Vector3(48, 0, 304),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 90, 0)
+    }))
+    shell_22.addComponent(
+      new OnPointerDown(() => {
+        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+    }))
+engine.addEntity(shell_22)
+
+//shell_23
+let shell_23 = new Entity()
+    shell_23.addComponent(new GLTFShape(shellPath))
+    shell_23.addComponent(new Transform({
+        position: new Vector3(48, 0, 288),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 180, 0)
+    }))
+    shell_23.addComponent(
+      new OnPointerDown(() => {
+        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+    }))
+engine.addEntity(shell_23)
+
+//shell_24
+let shell_24 = new Entity()
+    shell_24.addComponent(new GLTFShape(shellPath))
+    shell_24.addComponent(new Transform({
+        position: new Vector3(48, 0, 272),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 180, 0)
+    }))
+    shell_24.addComponent(
+      new OnPointerDown(() => {
+        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+    }))
+engine.addEntity(shell_24)
+
+//shell_25
+let shell_25 = new Entity()
+    shell_25.addComponent(new GLTFShape(shellPath))
+    shell_25.addComponent(new Transform({
+        position: new Vector3(48, 0, 256),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 180, 0)
+    }))
+    shell_25.addComponent(
+      new OnPointerDown(() => {
+        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+    }))
+engine.addEntity(shell_25)
+
+//shell_26
+let shell_26 = new Entity()
+    shell_26.addComponent(new GLTFShape(shellPath))
+    shell_26.addComponent(new Transform({
+        position: new Vector3(48, 0, 240),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 180, 0)
+    }))
+    shell_26.addComponent(
+      new OnPointerDown(() => {
+        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+    }))
+engine.addEntity(shell_26)
+
+//shell_27
+let shell_27 = new Entity()
+    shell_27.addComponent(new GLTFShape(shellPath))
+    shell_27.addComponent(new Transform({
+        position: new Vector3(48, 0, 224),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 180, 0)
+    }))
+    shell_27.addComponent(
+      new OnPointerDown(() => {
+        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+    }))
+engine.addEntity(shell_27)
+
+//shell_28
+let shell_28 = new Entity()
+    shell_28.addComponent(new GLTFShape(shellPath))
+    shell_28.addComponent(new Transform({
+        position: new Vector3(48, 0, 208),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 180, 0)
+    }))
+    shell_28.addComponent(
+      new OnPointerDown(() => {
+        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+    }))
+engine.addEntity(shell_28)
+
+
 
 
 
@@ -263,86 +666,87 @@ myVideoTexture3.loop = true
 
 //Courtyard 01 (SOUTH)
 
-//cube_01
+//cube_01 Stephan Duquesnoy
 let cube_01 = new Entity()
-let cube_01Path:string = "models/cube_01.glb"
+let cube_01Path:string = "models/STEPHANe.glb"
     cube_01.addComponent(new GLTFShape(cube_01Path))
     cube_01.addComponent(new Transform({
-        position: new Vector3(51.8, 0, 100.8),
-        scale: new Vector3(1, 1, 1),
-        rotation: Quaternion.Euler(0, 270, 0)
-}))
-engine.addEntity(cube_01)
-
-//cube_02
-let cube_02 = new Entity()
-let cube_02Path:string = "models/cube_01.glb"
-    cube_02.addComponent(new GLTFShape(cube_02Path))
-    cube_02.addComponent(new Transform({
-        position: new Vector3(51.8, 0, 84.8),
-        scale: new Vector3(1, 1, 1),
-        rotation: Quaternion.Euler(0, 270, 0)
-}))
-engine.addEntity(cube_02)
-
-//cube_03
-let cube_03 = new Entity()
-let cube_03Path:string = "models/cube_01.glb"
-    cube_03.addComponent(new GLTFShape(cube_03Path))
-    cube_03.addComponent(new Transform({
-        position: new Vector3(51.8, 0, 68.8),
-        scale: new Vector3(1, 1, 1),
-        rotation: Quaternion.Euler(0, 270, 0)
-}))
-engine.addEntity(cube_03)
-
-//cube_04
-let cube_04 = new Entity()
-let cube_04Path:string = "models/cube_01.glb"
-    cube_04.addComponent(new GLTFShape(cube_04Path))
-    cube_04.addComponent(new Transform({
-        position: new Vector3(51.8, 0, 52.8),
-        scale: new Vector3(1, 1, 1),
-        rotation: Quaternion.Euler(0, 270, 0)
-}))
-engine.addEntity(cube_04)
-
-//cube_05
-let cube_05 = new Entity()
-let cube_05Path:string = "models/cube_01.glb"
-    cube_05.addComponent(new GLTFShape(cube_05Path))
-    cube_05.addComponent(new Transform({
-        position: new Vector3(51.8, 0, 36.8),
-        scale: new Vector3(1, 1, 1),
-        rotation: Quaternion.Euler(0, 270, 0)
-}))
-engine.addEntity(cube_05)
-
-//cube_06
-let cube_06 = new Entity()
-let cube_06Path:string = "models/cube_01.glb"
-    cube_06.addComponent(new GLTFShape(cube_06Path))
-    cube_06.addComponent(new Transform({
-        position: new Vector3(51.8, 0, 20.8),
-        scale: new Vector3(1, 1, 1),
-        rotation: Quaternion.Euler(0, 270, 0)
-}))
-engine.addEntity(cube_06)
-
-//cube_07
-let cube_07 = new Entity()
-let cube_07Path:string = "models/cube_01.glb"
-    cube_07.addComponent(new GLTFShape(cube_07Path))
-    cube_07.addComponent(new Transform({
-        position: new Vector3(36.7, 0, 12.2),
+        position: new Vector3(52.5, 0, 104.05),
         scale: new Vector3(1, 1, 1),
         rotation: Quaternion.Euler(0, 0, 0)
 }))
+engine.addEntity(cube_01)
+
+
+//cube_02 Hannes Hummel without emission
+let cube_02 = new Entity()
+let cube_02Path:string = "models/HANNES.glb"
+    cube_02.addComponent(new GLTFShape(cube_02Path))
+    cube_02.addComponent(new Transform({
+        position: new Vector3(52.5, 0, 88.05),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 0, 0)
+}))
+engine.addEntity(cube_02)
+
+//cube_03 Hannes Hummel emission
+let cube_03 = new Entity()
+let cube_03Path:string = "models/HANNESe.glb"
+    cube_03.addComponent(new GLTFShape(cube_03Path))
+    cube_03.addComponent(new Transform({
+        position: new Vector3(52.7, 0, 72.05),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 0, 0)
+}))
+engine.addEntity(cube_03)
+
+//cube_04 Mellowmann
+let cube_04 = new Entity()
+let cube_04Path:string = "models/MELLOWMANN.glb"
+    cube_04.addComponent(new GLTFShape(cube_04Path))
+    cube_04.addComponent(new Transform({
+        position: new Vector3(54.4, 0, 56.15),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 90, 0)
+}))
+engine.addEntity(cube_04)
+
+//cube_05 Melody Owen
+let cube_05 = new Entity()
+let cube_05Path:string = "models/MELODY.glb"
+    cube_05.addComponent(new GLTFShape(cube_05Path))
+    cube_05.addComponent(new Transform({
+        position: new Vector3(52.5, 0, 40.05),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 0, 0)
+}))
+engine.addEntity(cube_05)
+
+//cube_06 Linda	Loh
+let cube_06 = new Entity()
+let cube_06Path:string = "models/LINDA.glb"
+    cube_06.addComponent(new GLTFShape(cube_06Path))
+    cube_06.addComponent(new Transform({
+        position: new Vector3(52.5, 0, 24.05),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 0, 0)
+}))
+engine.addEntity(cube_06)
+
+//cube_07 warrragwag
+let cube_07 = new Entity()
+let cube_07Path:string = "models/WARR.glb"
+    cube_07.addComponent(new GLTFShape(cube_07Path))
+    cube_07.addComponent(new Transform({
+        position: new Vector3(40.05, 0, 11.5),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 90, 0)
+}))
 engine.addEntity(cube_07)
 
-//cube_08
+//cube_08 Martínez	Siesta
 let cube_08 = new Entity()
-let cube_08Path:string = "models/cube_01.glb"
+let cube_08Path:string = "models/SIESTA.glb"
     cube_08.addComponent(new GLTFShape(cube_08Path))
     cube_08.addComponent(new Transform({
         position: new Vector3(20.7, 0, 12.2),
@@ -351,58 +755,58 @@ let cube_08Path:string = "models/cube_01.glb"
 }))
 engine.addEntity(cube_08)
 
-//cube_09
+//cube_09 Mango
 let cube_09 = new Entity()
-let cube_09Path:string = "models/cube_01.glb"
+let cube_09Path:string = "models/MANGO.glb"
     cube_09.addComponent(new GLTFShape(cube_09Path))
     cube_09.addComponent(new Transform({
-        position: new Vector3(12.2, 0, 27.2),
+        position: new Vector3(11.7, 0, 25.6),
         scale: new Vector3(1, 1, 1),
-        rotation: Quaternion.Euler(0, 90, 0)
+        rotation: Quaternion.Euler(0, 0, 0)
 }))
 engine.addEntity(cube_09)
 
-//cube_10
+//cube_10 MickRenders
 let cube_10 = new Entity()
-let cube_10Path:string = "models/cube_01.glb"
+let cube_10Path:string = "models/MICK.glb"
     cube_10.addComponent(new GLTFShape(cube_10Path))
     cube_10.addComponent(new Transform({
-        position: new Vector3(12.2, 0, 43.2),
-        scale: new Vector3(1, 1, 1),
-        rotation: Quaternion.Euler(0, 90, 0)
+        position: new Vector3(11.35, .65, 40.1),
+        scale: new Vector3(.95, .95, .95),
+        rotation: Quaternion.Euler(0, 180, 0)
 }))
 engine.addEntity(cube_10)
 
-//cube_11
+//cube_11 Michelle Brown
 let cube_11 = new Entity()
-let cube_11Path:string = "models/cube_01.glb"
+let cube_11Path:string = "models/MICHELLE.glb"
     cube_11.addComponent(new GLTFShape(cube_11Path))
     cube_11.addComponent(new Transform({
-        position: new Vector3(12.2, 0, 59.2),
+        position: new Vector3(11.35, 0, 56),
         scale: new Vector3(1, 1, 1),
-        rotation: Quaternion.Euler(0, 90, 0)
+        rotation: Quaternion.Euler(0, 180, 0)
 }))
 engine.addEntity(cube_11)
 
-//cube_12
+//cube_12 Dev Harlan
 let cube_12 = new Entity()
-let cube_12Path:string = "models/cube_01.glb"
+let cube_12Path:string = "models/DEV.glb"
     cube_12.addComponent(new GLTFShape(cube_12Path))
     cube_12.addComponent(new Transform({
-        position: new Vector3(12.2, 0, 75.2),
+        position: new Vector3(9.6, 0, 73.8 ),
         scale: new Vector3(1, 1, 1),
-        rotation: Quaternion.Euler(0, 90, 0)
+        rotation: Quaternion.Euler(0, 180, 0)
 }))
 engine.addEntity(cube_12)
 
-//cube_13
+//cube_13 Tripura
 let cube_13 = new Entity()
-let cube_13Path:string = "models/cube_01.glb"
+let cube_13Path:string = "models/TRIPURA.glb"
     cube_13.addComponent(new GLTFShape(cube_13Path))
     cube_13.addComponent(new Transform({
-        position: new Vector3(12.2, 0, 91.2),
+        position: new Vector3(11.35, 0, 88),
         scale: new Vector3(1, 1, 1),
-        rotation: Quaternion.Euler(0, 90, 0)
+        rotation: Quaternion.Euler(0, 180, 0)
 }))
 engine.addEntity(cube_13)
 
@@ -577,3 +981,115 @@ let cube_28Path:string = "models/cube_02.glb"
         rotation: Quaternion.Euler(0, 90, 0)
 }))
 engine.addEntity(cube_28)
+
+
+// SOUND BOXES
+
+/// Audio cube_04 Mellowmann
+//create audio clip and source
+const clip_04 = new AudioClip("sounds/MMSOUND.mp3")
+const source_04 = new AudioSource(clip_04)
+
+//Add audio source to the main cube GLB file (so position is good)
+cube_04.addComponent(source_04)
+
+// Audio can loop, true or false, change volume here too
+source_04.loop = true
+source_04.volume = 10
+
+
+// Create TriggerBox for audio to play only inside the cube
+
+const trigger_04 = new Entity();
+trigger_04.addComponent(new BoxShape()),
+trigger_04.getComponent(BoxShape).withCollisions = false
+trigger_04.getComponent(BoxShape).visible = false
+
+
+trigger_04.addComponent(new Transform({
+  position: new Vector3(54.4, 0, 56.15)
+}));
+
+let triggerBox_04 = new utils.TriggerBoxShape(
+  new Vector3 (12, 12, 12),
+  new Vector3(0, 13, 0)
+);
+
+
+// Toggle audio on and off when entering / exiting the cube
+
+trigger_04.addComponent(
+  new utils.TriggerComponent(
+    triggerBox_04,
+    {
+      onCameraEnter : () => {
+        log('play audio')
+        source_04.playing = true
+      },
+      onCameraExit : () => {
+        log('stop audio')
+        source_04.playing = false
+    },
+
+  //enableDebug: true
+      }
+  )
+)
+log('added new triggerbox')
+engine.addEntity(trigger_04)
+
+
+
+/// Audio cube_09 Mango
+//create audio clip and source
+
+const clip_09 = new AudioClip("sounds/HEART.mp3")
+const source_09 = new AudioSource(clip_09)
+
+//Add audio source to the main cube GLB file (so position is good) - change LPMcube to the name of the Artists cube entity
+cube_09.addComponent(source_09)
+
+// Audio can loop, true or false, change volume here too
+source_09.loop = true
+source_09.volume = 10
+
+
+// Create TriggerBox for audio to play only inside the cube
+
+const trigger_09 = new Entity();
+trigger_09.addComponent(new BoxShape()),
+trigger_09.getComponent(BoxShape).withCollisions = false
+trigger_09.getComponent(BoxShape).visible = false
+
+
+trigger_09.addComponent(new Transform({
+  position: new Vector3(11.7, 0, 25.6)
+}));
+
+let triggerBox_09 = new utils.TriggerBoxShape(
+  new Vector3 (12, 12, 12),
+  new Vector3(0, 13, 0)
+);
+
+
+// Toggle audio on and off when entering / exiting the cube
+
+trigger_09.addComponent(
+  new utils.TriggerComponent(
+    triggerBox_09,
+    {
+      onCameraEnter : () => {
+        log('play audio')
+        source_09.playing = true
+      },
+      onCameraExit : () => {
+        log('stop audio')
+        source_09.playing = false
+    },
+
+  //enableDebug: true
+      }
+  )
+)
+log('added new triggerbox')
+engine.addEntity(trigger_09)
