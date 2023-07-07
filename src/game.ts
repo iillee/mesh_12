@@ -843,28 +843,25 @@ let channel_02 = new Entity()
             engine.addEntity(channel_02)
     }))
 
-//cube_15 Tripura 
-//Tripura code in tripura.ts
-let cube_15 = new Entity()
-//let cube_15Path:string = "models/cube_02.glb"
-  //  cube_15.addComponent(new GLTFShape(cube_15Path))
-    cube_15.addComponent(new Transform({
-        position: new Vector3(9.8, -.125, 215.8),
-        scale: new Vector3(1, 1, 1),
-        rotation: Quaternion.Euler(0, 270, 0)
-}))
-engine.addEntity(cube_15)
+        //cube_15
+        let cube_15 = new Entity()
+        let cube_15Path:string = "models/cube_02.glb"
+            cube_15.addComponent(new GLTFShape(cube_15Path))
+            cube_15.addComponent(new Transform({
+                position: new Vector3(9.8, -.125, 215.8),
+                scale: new Vector3(1, 1, 1),
+                rotation: Quaternion.Euler(0, 270, 0)
+        }))
 
-//cube_16 Dan Anthony Kelly 
-let cube_16 = new Entity()
-//let cube_16Path:string = "models/cube_02.glb"
-//    cube_16.addComponent(new GLTFShape(cube_16Path))
-    cube_16.addComponent(new Transform({
-        position: new Vector3(9.8, -.125, 231.8),
-        scale: new Vector3(1, 1, 1),
-        rotation: Quaternion.Euler(0, 270, 0)
-}))
-engine.addEntity(cube_16)
+        //cube_16
+        let cube_16 = new Entity()
+        let cube_16Path:string = "models/cube_02.glb"
+            cube_16.addComponent(new GLTFShape(cube_16Path))
+            cube_16.addComponent(new Transform({
+                position: new Vector3(9.8, -.125, 231.8),
+                scale: new Vector3(1, 1, 1),
+                rotation: Quaternion.Euler(0, 270, 0)
+        }))
 
         //cube_17
         let cube_17 = new Entity()
