@@ -1,7 +1,18 @@
 
+
 //IMPORTS
-import * as utils from '@dcl/ecs-scene-utils'
+import * as utils from '@dcl/ecs-scene-utils';
+import { createTripuraScene } from './tripura';
+import { createDanScene } from './dan';
+import { createAlexScene } from './alex';
+import { createCKScene } from './ck';
 import { movePlayerTo } from '@decentraland/RestrictedActions'
+
+// INIT SCENES
+createCKScene();
+createAlexScene();
+createDanScene();
+createTripuraScene();
 
 //VIDEO CLIPS
 const watermp4 = new VideoClip("videos/PIXEL2.mp4")
@@ -608,6 +619,9 @@ let shell_28 = new Entity()
     }))
 engine.addEntity(shell_28)
 
+
+
+/*
 //CHANNEL TRIGGERS
 
 //Channel Trigger 01
@@ -625,10 +639,10 @@ const trigger_01 = new Entity()
         new utils.TriggerComponent(
           triggerBox01,
         {
-          enableDebug: false,
-          onCameraExit :() => {
-            log('triggered!')
-            channel_01.getComponent(utils.ToggleComponent).toggle()}
+         // enableDebug: false,
+          //onCameraExit :() => {
+            //log('triggered!')
+            //channel_01.getComponent(utils.ToggleComponent).toggle()}
       }))
 engine.addEntity(trigger_01)
 
@@ -647,14 +661,14 @@ const trigger_02 = new Entity()
         new utils.TriggerComponent(
           triggerBox02,
         {
-          enableDebug: false,
-          onCameraExit :() => {
-            log('triggered!')
-            channel_02.getComponent(utils.ToggleComponent).toggle()}
+          //enableDebug: false,
+          //onCameraExit :() => {
+          //  log('triggered!')
+          //  channel_02.getComponent(utils.ToggleComponent).toggle()}
       }))
 engine.addEntity(trigger_02)
 
-
+*/
 
 
 
@@ -669,11 +683,11 @@ engine.addEntity(trigger_02)
 //Courtyard 01 (SOUTH)
 
 //Channel 01 - Parent
-let channel_01 = new Entity()
-    channel_01.addComponent(
-        new utils.ToggleComponent(utils.ToggleState.On, value => {
-            engine.addEntity(channel_01)
-    }))
+//let channel_01 = new Entity()
+    //channel_01.addComponent(
+    //    new utils.ToggleComponent(utils.ToggleState.On, value => {
+    //        engine.addEntity(channel_01)
+   // }))
 
         //cube_01 Stephan Duquesnoyc
         let cube_01 = new Entity()
@@ -684,6 +698,7 @@ let channel_01 = new Entity()
                 scale: new Vector3(1, 1, 1),
                 rotation: Quaternion.Euler(0, 0, 0)
         }))
+        engine.addEntity(cube_01)
 
         //cube_02 V4W2
         let cube_02 = new Entity()
@@ -694,6 +709,7 @@ let channel_01 = new Entity()
                 scale: new Vector3(1, 1, 1),
                 rotation: Quaternion.Euler(0, 0, 0)
         }))
+        engine.addEntity(cube_02)
 
         //cube_03 Hannes Hummel
         let cube_03 = new Entity()
@@ -704,6 +720,7 @@ let channel_01 = new Entity()
                 scale: new Vector3(1, 1, 1),
                 rotation: Quaternion.Euler(0, 0, 0)
         }))
+        engine.addEntity(cube_03)
 
         //cube_04 Mellowmann
         let cube_04 = new Entity()
@@ -714,6 +731,7 @@ let channel_01 = new Entity()
                 scale: new Vector3(1, 1, 1),
                 rotation: Quaternion.Euler(0, 90, 0)
         }))
+        engine.addEntity(cube_04)
 
         //cube_05 Melody Owen
         let cube_05 = new Entity()
@@ -724,6 +742,7 @@ let channel_01 = new Entity()
                 scale: new Vector3(1, 1, 1),
                 rotation: Quaternion.Euler(0, 0, 0)
         }))
+        engine.addEntity(cube_05)
 
         //cube_06 Linda	Loh
         let cube_06 = new Entity()
@@ -734,6 +753,7 @@ let channel_01 = new Entity()
                 scale: new Vector3(1, 1, 1),
                 rotation: Quaternion.Euler(0, 0, 0)
         }))
+        engine.addEntity(cube_06)
 
         //cube_07 warrragwag
         let cube_07 = new Entity()
@@ -744,6 +764,7 @@ let channel_01 = new Entity()
                 scale: new Vector3(1, 1, 1),
                 rotation: Quaternion.Euler(0, 90, 0)
         }))
+        engine.addEntity(cube_07)
 
         //cube_08 Martínez	Siesta
         let cube_08 = new Entity()
@@ -754,6 +775,7 @@ let channel_01 = new Entity()
                 scale: new Vector3(1, 1, 1),
                 rotation: Quaternion.Euler(0, 0, 0)
         }))
+        engine.addEntity(cube_08)
 
         //cube_09 Mango
         let cube_09 = new Entity()
@@ -764,6 +786,7 @@ let channel_01 = new Entity()
                 scale: new Vector3(1, 1, 1),
                 rotation: Quaternion.Euler(0, 0, 0)
         }))
+        engine.addEntity(cube_09)
 
         //cube_10 MickRenders
         let cube_10 = new Entity()
@@ -774,6 +797,7 @@ let channel_01 = new Entity()
                 scale: new Vector3(.95, .95, .95),
                 rotation: Quaternion.Euler(0, 180, 0)
         }))
+        engine.addEntity(cube_10)
 
         //cube_11 Michelle Brown
         let cube_11 = new Entity()
@@ -784,6 +808,7 @@ let channel_01 = new Entity()
                 scale: new Vector3(1, 1, 1),
                 rotation: Quaternion.Euler(0, 180, 0)
         }))
+        engine.addEntity(cube_11)
 
         //cube_12 Dev Harlan
         let cube_12 = new Entity()
@@ -794,6 +819,7 @@ let channel_01 = new Entity()
                 scale: new Vector3(1, 1, 1),
                 rotation: Quaternion.Euler(0, 180, 0)
         }))
+        engine.addEntity(cube_12)
 
         //cube_13 Nyankee
         let cube_13 = new Entity()
@@ -804,6 +830,7 @@ let channel_01 = new Entity()
                 scale: new Vector3(1, 1, 1),
                 rotation: Quaternion.Euler(0, 180, 0)
         }))
+        engine.addEntity(cube_13)
 
         //cube_14 Lejin
         let cube_14 = new Entity()
@@ -814,22 +841,23 @@ let channel_01 = new Entity()
                 scale: new Vector3(1, 1, 1 ),
                 rotation: Quaternion.Euler(0, 180, 0)
         }))
+        engine.addEntity(cube_14)
 
 //Set  above cubes to parent_01
-cube_01.setParent(channel_01)
-cube_02.setParent(channel_01)
-cube_03.setParent(channel_01)
-cube_04.setParent(channel_01)
-cube_05.setParent(channel_01)
-cube_06.setParent(channel_01)
-cube_07.setParent(channel_01)
-cube_08.setParent(channel_01)
-cube_09.setParent(channel_01)
-cube_10.setParent(channel_01)
-cube_11.setParent(channel_01)
-cube_12.setParent(channel_01)
-cube_13.setParent(channel_01)
-cube_14.setParent(channel_01)
+//cube_01.setParent(channel_01)
+//cube_02.setParent(channel_01)
+//cube_03.setParent(channel_01)
+//cube_04.setParent(channel_01)
+//cube_05.setParent(channel_01)
+//cube_06.setParent(channel_01)
+//cube_07.setParent(channel_01)
+//cube_08.setParent(channel_01)
+//cube_09.setParent(channel_01)
+//cube_10.setParent(channel_01)
+//cube_11.setParent(channel_01)
+//cube_12.setParent(channel_01)
+//cube_13.setParent(channel_01)
+//cube_14.setParent(channel_01)
 
 
 
@@ -837,11 +865,11 @@ cube_14.setParent(channel_01)
 //Courtyard 02 (NORTH)
 
 //Channel 02 - Parent
-let channel_02 = new Entity()
-    channel_02.addComponent(
-        new utils.ToggleComponent(utils.ToggleState.On, value => {
-            engine.addEntity(channel_02)
-    }))
+//let channel_02 = new Entity()
+//    channel_02.addComponent(
+//        new utils.ToggleComponent(utils.ToggleState.On, value => {
+//            engine.addEntity(channel_02)
+//    }))
 
         //cube_15
         let cube_15 = new Entity()
@@ -983,6 +1011,7 @@ let channel_02 = new Entity()
                 rotation: Quaternion.Euler(0, 90, 0)
         }))
 
+/*
 //Set  above cubes to parent_02
 cube_15.setParent(channel_02)
 cube_16.setParent(channel_02)
@@ -998,6 +1027,7 @@ cube_25.setParent(channel_02)
 cube_26.setParent(channel_02)
 cube_27.setParent(channel_02)
 cube_28.setParent(channel_02)
+*/
 
 // SOUND BOXES
 
@@ -1220,3 +1250,4 @@ trigger_14.addComponent(
 )
 log('added new triggerbox')
 engine.addEntity(trigger_14)
+
