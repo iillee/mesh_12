@@ -15,7 +15,7 @@ createDanScene();
 createTripuraScene();
 
 //VIDEO CLIPS
-const watermp4 = new VideoClip("videos/PIXEL2.mp4")
+const watermp4 = new VideoClip("videos/water.mp4")
 const aiscape_01= new VideoClip("videos/TAIGA_01.mp4")
 const aiscape_02= new VideoClip("videos/TAIGA_02.mp4")
 
@@ -80,14 +80,37 @@ const waterMaterial = new Material()
 
 //ENTITES
 
+
+@Component("lerpData")
+export class LerpData {
+  origin: Vector3 = Vector3.Zero()
+  target: Vector3 = Vector3.Zero()
+  fraction: number = 0
+}
+
+// a system to carry out the movement
+export class LerpMove implements ISystem {
+  update(dt: number) {
+    let transform = water1.getComponent(Transform)
+    let lerp = water1.getComponent(LerpData)
+    if (lerp.fraction < 1) {
+      transform.position = Vector3.Lerp(lerp.origin, lerp.target, lerp.fraction)
+      lerp.fraction += dt / 8
+    }
+  }
+}
+
+// Add system to engine
+engine.addSystem(new LerpMove())
+
 //water
 const water1 = new Entity()
       water1.addComponent(new PlaneShape())
       water1.addComponent(waterMaterial)
       water1.addComponent(pond)
       water1.getComponent(PlaneShape).withCollisions = false
+      water1.getComponent(PlaneShape).visible = true
       water1.addComponent(new Transform({
-          position: new Vector3(32, .5, 160),
           scale: new Vector3(316, 60, 1),
           rotation: Quaternion.Euler(90, 90, 0)
 }))
@@ -98,6 +121,11 @@ pond.loop = true
 pond.volume = 0.25
 waterTexture.play()
 waterTexture.loop = true
+
+
+water1.addComponent(new LerpData())
+water1.getComponent(LerpData).origin = new Vector3(32, 0, 160),
+water1.getComponent(LerpData).target = new Vector3(32, .5, 160)
 
 //constant_01
 let constant_01 = new Entity()
@@ -234,8 +262,12 @@ let shell_01 = new Entity()
     shell_01.addComponent(
       new OnPointerDown(() => {
         openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+    },
+    {
+          hoverText: "ARTIST NAME website"
     }))
 engine.addEntity(shell_01)
+
 
 //shell_02
 let shell_02 = new Entity()
@@ -248,7 +280,10 @@ let shell_02 = new Entity()
     shell_02.addComponent(
       new OnPointerDown(() => {
         openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
-    }))
+      },
+      {
+            hoverText: "ARTIST NAME website"
+      }))
 engine.addEntity(shell_02)
 
 //shell_03
@@ -262,7 +297,10 @@ let shell_03 = new Entity()
     shell_03.addComponent(
       new OnPointerDown(() => {
         openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
-    }))
+      },
+      {
+            hoverText: "ARTIST NAME website"
+      }))
 engine.addEntity(shell_03)
 
 //shell_04
@@ -276,7 +314,10 @@ let shell_04 = new Entity()
     shell_04.addComponent(
       new OnPointerDown(() => {
         openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
-    }))
+      },
+      {
+            hoverText: "ARTIST NAME website"
+      }))
 engine.addEntity(shell_04)
 
 //shell_05
@@ -290,7 +331,10 @@ let shell_05 = new Entity()
     shell_05.addComponent(
       new OnPointerDown(() => {
         openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
-    }))
+      },
+      {
+            hoverText: "ARTIST NAME website"
+      }))
 engine.addEntity(shell_05)
 
 //shell_06
@@ -304,7 +348,10 @@ let shell_06 = new Entity()
     shell_06.addComponent(
       new OnPointerDown(() => {
         openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
-    }))
+      },
+      {
+            hoverText: "ARTIST NAME website"
+      }))
 engine.addEntity(shell_06)
 
 //shell_07
@@ -318,7 +365,10 @@ let shell_07 = new Entity()
     shell_07.addComponent(
       new OnPointerDown(() => {
         openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
-    }))
+      },
+      {
+            hoverText: "ARTIST NAME website"
+      }))
 engine.addEntity(shell_07)
 
 //shell_08
@@ -332,7 +382,10 @@ let shell_08 = new Entity()
     shell_08.addComponent(
       new OnPointerDown(() => {
         openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
-    }))
+      },
+      {
+            hoverText: "ARTIST NAME website"
+      }))
 engine.addEntity(shell_08)
 
 //shell_09
@@ -346,7 +399,10 @@ let shell_09 = new Entity()
     shell_09.addComponent(
       new OnPointerDown(() => {
         openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
-    }))
+      },
+      {
+            hoverText: "ARTIST NAME website"
+      }))
 engine.addEntity(shell_09)
 
 //shell_10
@@ -360,7 +416,10 @@ let shell_10 = new Entity()
     shell_10.addComponent(
       new OnPointerDown(() => {
         openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
-    }))
+      },
+      {
+            hoverText: "ARTIST NAME website"
+      }))
 engine.addEntity(shell_10)
 
 //shell_11
@@ -374,7 +433,10 @@ let shell_11 = new Entity()
     shell_11.addComponent(
       new OnPointerDown(() => {
         openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
-    }))
+      },
+      {
+            hoverText: "ARTIST NAME website"
+      }))
 engine.addEntity(shell_11)
 
 //shell_12
@@ -388,7 +450,10 @@ let shell_12 = new Entity()
     shell_12.addComponent(
       new OnPointerDown(() => {
         openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
-    }))
+      },
+      {
+            hoverText: "ARTIST NAME website"
+      }))
 engine.addEntity(shell_12)
 
 //shell_13
@@ -402,7 +467,10 @@ let shell_13 = new Entity()
     shell_13.addComponent(
       new OnPointerDown(() => {
         openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
-    }))
+      },
+      {
+            hoverText: "ARTIST NAME website"
+      }))
 engine.addEntity(shell_13)
 
 //shell_14
@@ -416,7 +484,10 @@ let shell_14 = new Entity()
     shell_14.addComponent(
       new OnPointerDown(() => {
         openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
-    }))
+      },
+      {
+            hoverText: "ARTIST NAME website"
+      }))
 engine.addEntity(shell_14)
 
 
@@ -434,7 +505,10 @@ let shell_15 = new Entity()
     shell_15.addComponent(
       new OnPointerDown(() => {
         openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
-    }))
+      },
+      {
+            hoverText: "ARTIST NAME website"
+      }))
 engine.addEntity(shell_15)
 
 //shell_16
@@ -448,7 +522,10 @@ let shell_16 = new Entity()
     shell_16.addComponent(
       new OnPointerDown(() => {
         openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
-    }))
+      },
+      {
+            hoverText: "ARTIST NAME website"
+      }))
 engine.addEntity(shell_16)
 
 //shell_17
@@ -462,7 +539,10 @@ let shell_17 = new Entity()
     shell_17.addComponent(
       new OnPointerDown(() => {
         openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
-    }))
+      },
+      {
+            hoverText: "ARTIST NAME website"
+      }))
 engine.addEntity(shell_17)
 
 //shell_18
@@ -476,7 +556,10 @@ let shell_18 = new Entity()
     shell_18.addComponent(
       new OnPointerDown(() => {
         openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
-    }))
+      },
+      {
+            hoverText: "ARTIST NAME website"
+      }))
 engine.addEntity(shell_18)
 
 //shell_19
@@ -490,7 +573,10 @@ let shell_19 = new Entity()
     shell_19.addComponent(
       new OnPointerDown(() => {
         openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
-    }))
+      },
+      {
+            hoverText: "ARTIST NAME website"
+      }))
 engine.addEntity(shell_19)
 
 //shell_20
@@ -504,7 +590,10 @@ let shell_20 = new Entity()
     shell_20.addComponent(
       new OnPointerDown(() => {
         openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
-    }))
+      },
+      {
+            hoverText: "ARTIST NAME website"
+      }))
 engine.addEntity(shell_20)
 
 //shell_21
@@ -518,7 +607,10 @@ let shell_21 = new Entity()
     shell_21.addComponent(
       new OnPointerDown(() => {
         openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
-    }))
+      },
+      {
+            hoverText: "ARTIST NAME website"
+      }))
 engine.addEntity(shell_21)
 
 //shell_22
@@ -532,7 +624,10 @@ let shell_22 = new Entity()
     shell_22.addComponent(
       new OnPointerDown(() => {
         openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
-    }))
+      },
+      {
+            hoverText: "ARTIST NAME website"
+      }))
 engine.addEntity(shell_22)
 
 //shell_23
@@ -546,7 +641,10 @@ let shell_23 = new Entity()
     shell_23.addComponent(
       new OnPointerDown(() => {
         openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
-    }))
+      },
+      {
+            hoverText: "ARTIST NAME website"
+      }))
 engine.addEntity(shell_23)
 
 //shell_24
@@ -560,7 +658,10 @@ let shell_24 = new Entity()
     shell_24.addComponent(
       new OnPointerDown(() => {
         openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
-    }))
+      },
+      {
+            hoverText: "ARTIST NAME website"
+      }))
 engine.addEntity(shell_24)
 
 //shell_25
@@ -574,7 +675,10 @@ let shell_25 = new Entity()
     shell_25.addComponent(
       new OnPointerDown(() => {
         openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
-    }))
+      },
+      {
+            hoverText: "ARTIST NAME website"
+      }))
 engine.addEntity(shell_25)
 
 //shell_26
@@ -588,7 +692,10 @@ let shell_26 = new Entity()
     shell_26.addComponent(
       new OnPointerDown(() => {
         openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
-    }))
+      },
+      {
+            hoverText: "ARTIST NAME website"
+      }))
 engine.addEntity(shell_26)
 
 //shell_27
@@ -602,7 +709,10 @@ let shell_27 = new Entity()
     shell_27.addComponent(
       new OnPointerDown(() => {
         openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
-    }))
+      },
+      {
+            hoverText: "ARTIST NAME website"
+      }))
 engine.addEntity(shell_27)
 
 //shell_28
@@ -616,7 +726,10 @@ let shell_28 = new Entity()
     shell_28.addComponent(
       new OnPointerDown(() => {
         openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
-    }))
+      },
+      {
+            hoverText: "ARTIST NAME website"
+      }))
 engine.addEntity(shell_28)
 
 
@@ -694,7 +807,7 @@ engine.addEntity(trigger_02)
         let cube_01Path:string = "models/STEPHAN.glb"
             cube_01.addComponent(new GLTFShape(cube_01Path))
             cube_01.addComponent(new Transform({
-                position: new Vector3(52.5, 0, 104.05),
+                position: new Vector3(52.5, 0, 104.04),
                 scale: new Vector3(1, 1, 1),
                 rotation: Quaternion.Euler(0, 0, 0)
         }))
@@ -705,7 +818,7 @@ engine.addEntity(trigger_02)
         let cube_02Path:string = "models/V4W.glb"
             cube_02.addComponent(new GLTFShape(cube_02Path))
             cube_02.addComponent(new Transform({
-                position: new Vector3(52.5, 0, 88.05),
+                position: new Vector3(52.5, 0, 88.04),
                 scale: new Vector3(1, 1, 1),
                 rotation: Quaternion.Euler(0, 0, 0)
         }))
@@ -716,7 +829,7 @@ engine.addEntity(trigger_02)
         let cube_03Path:string = "models/HANNES2.glb"
             cube_03.addComponent(new GLTFShape(cube_03Path))
             cube_03.addComponent(new Transform({
-                position: new Vector3(52.7, 0, 72.05),
+                position: new Vector3(52.5, 0, 72.05),
                 scale: new Vector3(1, 1, 1),
                 rotation: Quaternion.Euler(0, 0, 0)
         }))
@@ -1250,4 +1363,3 @@ trigger_14.addComponent(
 )
 log('added new triggerbox')
 engine.addEntity(trigger_14)
-
