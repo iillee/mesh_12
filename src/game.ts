@@ -6,6 +6,8 @@ import { createTripuraScene } from './tripura';
 import { createDanScene } from './dan';
 import { createAlexScene } from './alex';
 import { createCKScene } from './ck';
+import { createDevVideoScene } from './devVideo';
+import { createMicahScene } from './micah';
 import { movePlayerTo } from '@decentraland/RestrictedActions'
 
 // INIT SCENES
@@ -13,6 +15,8 @@ createCKScene();
 createAlexScene();
 createDanScene();
 createTripuraScene();
+createDevVideoScene();
+createMicahScene();
 
 //VIDEO CLIPS
 const watermp4 = new VideoClip("videos/water.mp4")
@@ -971,7 +975,7 @@ engine.addEntity(trigger_02)
         let cube_12Path:string = "models/DEV.glb"
             cube_12.addComponent(new GLTFShape(cube_12Path))
             cube_12.addComponent(new Transform({
-                position: new Vector3(9.6, 0, 73.8 ),
+                position: new Vector3(9.6, 0, 73.8),
                 scale: new Vector3(1, 1, 1),
                 rotation: Quaternion.Euler(0, 180, 0)
         }))
