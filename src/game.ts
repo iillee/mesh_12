@@ -609,9 +609,9 @@ engine.addEntity(shell_18)
 let shell_19 = new Entity()
     shell_19.addComponent(new GLTFShape(shellPath))
     shell_19.addComponent(new Transform({
-        position: new Vector3(16, 0, 288),
-        scale: new Vector3(1, 1, 1),
-        rotation: Quaternion.Euler(0, 0, 0)
+       position: new Vector3(16, 0, 288),
+       scale: new Vector3(1, 1, 1),
+       rotation: Quaternion.Euler(0, 0, 0)
     }))
     shell_19.addComponent(
       new OnPointerDown(() => {
@@ -620,7 +620,7 @@ let shell_19 = new Entity()
       {
             hoverText: "ARTIST NAME website"
       }))
-engine.addEntity(shell_19)
+ engine.addEntity(shell_19)
 
 //shell_20
 let shell_20 = new Entity()
@@ -680,18 +680,18 @@ let shell_23 = new Entity()
         position: new Vector3(48, 0, 288),
         scale: new Vector3(1, 1, 1),
         rotation: Quaternion.Euler(0, 180, 0)
-    }))
-    shell_23.addComponent(
+     }))
+     shell_23.addComponent(
       new OnPointerDown(() => {
         openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
       },
       {
             hoverText: "ARTIST NAME website"
       }))
-engine.addEntity(shell_23)
+ engine.addEntity(shell_23)
 
 //shell_24
-let shell_24 = new Entity()
+ let shell_24 = new Entity()
     shell_24.addComponent(new GLTFShape(shellPath))
     shell_24.addComponent(new Transform({
         position: new Vector3(48, 0, 272),
@@ -705,10 +705,10 @@ let shell_24 = new Entity()
       {
             hoverText: "ARTIST NAME website"
       }))
-engine.addEntity(shell_24)
+ engine.addEntity(shell_24)
 
-//shell_25
-let shell_25 = new Entity()
+// shell_25
+ let shell_25 = new Entity()
     shell_25.addComponent(new GLTFShape(shellPath))
     shell_25.addComponent(new Transform({
         position: new Vector3(48, 0, 256),
@@ -724,14 +724,14 @@ let shell_25 = new Entity()
       }))
 engine.addEntity(shell_25)
 
-//shell_26
-let shell_26 = new Entity()
+// shell_26
+ let shell_26 = new Entity()
     shell_26.addComponent(new GLTFShape(shellPath))
     shell_26.addComponent(new Transform({
         position: new Vector3(48, 0, 240),
         scale: new Vector3(1, 1, 1),
         rotation: Quaternion.Euler(0, 180, 0)
-    }))
+     }))
     shell_26.addComponent(
       new OnPointerDown(() => {
         openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
@@ -739,7 +739,7 @@ let shell_26 = new Entity()
       {
             hoverText: "ARTIST NAME website"
       }))
-engine.addEntity(shell_26)
+ engine.addEntity(shell_26)
 
 //shell_27
 let shell_27 = new Entity()
@@ -758,7 +758,7 @@ let shell_27 = new Entity()
       }))
 engine.addEntity(shell_27)
 
-//shell_28
+// shell_28
 let shell_28 = new Entity()
     shell_28.addComponent(new GLTFShape(shellPath))
     shell_28.addComponent(new Transform({
@@ -773,7 +773,7 @@ let shell_28 = new Entity()
       {
             hoverText: "ARTIST NAME website"
       }))
-engine.addEntity(shell_28)
+ engine.addEntity(shell_28)
 
 
 
@@ -858,7 +858,7 @@ engine.addEntity(trigger_02)
 
         //cube_02 V4W2
         let cube_02 = new Entity()
-        let cube_02Path:string = "models/V4W.glb"
+        let cube_02Path:string = "models/V4Wb.glb"
             cube_02.addComponent(new GLTFShape(cube_02Path))
             cube_02.addComponent(new Transform({
                 position: new Vector3(52.5, 0, 88.04),
@@ -1067,27 +1067,29 @@ engine.addEntity(trigger_02)
                 rotation: Quaternion.Euler(0, 270, 0)
         }))
 
-        //cube_19
+        //cube_19 Leah Smithson
         let cube_19 = new Entity()
-        let cube_19Path:string = "models/cube_02.glb"
+        let cube_19Path:string = "models/LEAH.glb"
             cube_19.addComponent(new GLTFShape(cube_19Path))
             cube_19.addComponent(new Transform({
-                position: new Vector3(9.8, -.125, 279.8),
+                position: new Vector3(11.2 , 0, 279.9),
                 scale: new Vector3(1, 1, 1),
-                rotation: Quaternion.Euler(0, 270, 0)
+                rotation: Quaternion.Euler(0, 180, 0)
         }))
+        engine.addEntity(cube_19)
 
-        //cube_20
+        //cube_20 Mattia Cuttini
         let cube_20 = new Entity()
-        let cube_20Path:string = "models/cube_02.glb"
+        let cube_20Path:string = "models/MATTIA.glb"
             cube_20.addComponent(new GLTFShape(cube_20Path))
             cube_20.addComponent(new Transform({
-                position: new Vector3(9.8, -.125, 295.8),
+                position: new Vector3(11.2, 0, 296),
                 scale: new Vector3(1, 1, 1),
-                rotation: Quaternion.Euler(0, 270, 0)
+                rotation: Quaternion.Euler(0, 180, 0)
         }))
+        engine.addEntity(cube_20)
 
-        //cube_21
+        //cube_21 Morteeeza / needs correction - massive armature
         let cube_21 = new Entity()
         let cube_21Path:string = "models/cube_02.glb"
             cube_21.addComponent(new GLTFShape(cube_21Path))
@@ -1097,7 +1099,7 @@ engine.addEntity(trigger_02)
                 rotation: Quaternion.Euler(0, 0, 0)
         }))
 
-        //cube_22
+        //cube_22 Micah Alhadeff - KJ Install
         let cube_22 = new Entity()
         let cube_22Path:string = "models/cube_02.glb"
             cube_22.addComponent(new GLTFShape(cube_22Path))
@@ -1107,65 +1109,71 @@ engine.addEntity(trigger_02)
                 rotation: Quaternion.Euler(0, 0, 0)
         }))
 
-        //cube_23
+        //cube_23 Hyperdavy
         let cube_23 = new Entity()
-        let cube_23Path:string = "models/cube_02.glb"
+        let cube_23Path:string = "models/HYPERDAVY.glb"
             cube_23.addComponent(new GLTFShape(cube_23Path))
             cube_23.addComponent(new Transform({
-                position: new Vector3(54.2, -.125, 296.2),
+                position: new Vector3(52.5, 0, 296),
                 scale: new Vector3(1, 1, 1),
-                rotation: Quaternion.Euler(0, 90, 0)
+                rotation: Quaternion.Euler(0, 0, 0)
         }))
+        engine.addEntity(cube_23)
 
-        //cube_24
+
+        //cube_24 Ivan Hugo - needs correction
         let cube_24 = new Entity()
-        let cube_24Path:string = "models/cube_02.glb"
+        let cube_24Path:string = "models/HUGO.glb"
             cube_24.addComponent(new GLTFShape(cube_24Path))
             cube_24.addComponent(new Transform({
                 position: new Vector3(54.2, -.125, 280.2),
                 scale: new Vector3(1, 1, 1),
                 rotation: Quaternion.Euler(0, 90, 0)
         }))
+        engine.addEntity(cube_24)
 
-        //cube_25
+        //cube_25 Krush
         let cube_25 = new Entity()
-        let cube_25Path:string = "models/cube_02.glb"
+        let cube_25Path:string = "models/KRUSH.glb"
             cube_25.addComponent(new GLTFShape(cube_25Path))
             cube_25.addComponent(new Transform({
                 position: new Vector3(54.2, -.125, 264.2),
                 scale: new Vector3(1, 1, 1),
                 rotation: Quaternion.Euler(0, 90, 0)
         }))
+        engine.addEntity(cube_25)
 
-        //cube_26
+        //cube_26 Jikke 
         let cube_26 = new Entity()
-        let cube_26Path:string = "models/cube_02.glb"
+        let cube_26Path:string = "models/JIKKE.glb"
             cube_26.addComponent(new GLTFShape(cube_26Path))
             cube_26.addComponent(new Transform({
-                position: new Vector3(54.2, -.125, 248.2),
+                position: new Vector3(52.5, 0, 248.2),
                 scale: new Vector3(1, 1, 1),
-                rotation: Quaternion.Euler(0, 90, 0)
+                rotation: Quaternion.Euler(0, 0, 0)
         }))
+        engine.addEntity(cube_26)
 
         //cube_27
         let cube_27 = new Entity()
         let cube_27Path:string = "models/cube_02.glb"
             cube_27.addComponent(new GLTFShape(cube_27Path))
             cube_27.addComponent(new Transform({
-                position: new Vector3(54.2, -.125, 232.2),
+                position: new Vector3(54.2, 0 , 232.2),
                 scale: new Vector3(1, 1, 1),
                 rotation: Quaternion.Euler(0, 90, 0)
         }))
 
-        //cube_28
+        //cube_28 Rebecca Rose
         let cube_28 = new Entity()
-        let cube_28Path:string = "models/cube_02.glb"
+        let cube_28Path:string = "models/REBECCA.glb"
             cube_28.addComponent(new GLTFShape(cube_28Path))
             cube_28.addComponent(new Transform({
-                position: new Vector3(54.2, -.125, 216.2),
+                position: new Vector3(52.5, 0, 216),
                 scale: new Vector3(1, 1, 1),
-                rotation: Quaternion.Euler(0, 90, 0)
+                rotation: Quaternion.Euler(0, 0, 0)
         }))
+        engine.addEntity(cube_28)
 
 /*
 //Set  above cubes to parent_02
@@ -1186,6 +1194,59 @@ cube_28.setParent(channel_02)
 */
 
 // SOUND BOXES
+
+/// Audio cube_02 V4W
+//create audio clip and source
+const clip_02c = new AudioClip("sounds/V4W.mp3")
+const source_02c = new AudioSource(clip_02c)
+
+//Add audio source to the main cube GLB file (so position is good)
+cube_02.addComponent(source_02c)
+
+// Audio can loop, true or false, change volume here too
+source_02c.loop = true
+source_02c.volume = 10
+
+
+// Create TriggerBox for audio to play only inside the cube
+
+const trigger_02c = new Entity();
+trigger_02c.addComponent(new BoxShape()),
+trigger_02c.getComponent(BoxShape).withCollisions = false
+trigger_02c.getComponent(BoxShape).visible = false
+
+
+trigger_02c.addComponent(new Transform({
+  position: new Vector3(52.5, 0, 88.04)
+}));
+
+let triggerBox_02c = new utils.TriggerBoxShape(
+  new Vector3 (12, 12, 12),
+  new Vector3(0, 13, 0)
+);
+
+
+// Toggle audio on and off when entering / exiting the cube
+
+trigger_02c.addComponent(
+  new utils.TriggerComponent(
+    triggerBox_02c,
+    {
+      onCameraEnter : () => {
+        log('play audio')
+        source_04.playing = true
+      },
+      onCameraExit : () => {
+        log('stop audio')
+        source_04.playing = false
+    },
+
+  //enableDebug: true
+      }
+  )
+)
+log('added new triggerbox')
+engine.addEntity(trigger_02c)
 
 /// Audio cube_04 Mellowmann
 //create audio clip and source
@@ -1406,3 +1467,290 @@ trigger_14.addComponent(
 )
 log('added new triggerbox')
 engine.addEntity(trigger_14)
+
+// END Lejin audio
+
+
+/// Audio cube_19 Leah Smithson
+//create audio clip and source
+
+const clip_19 = new AudioClip("sounds/LEAH.mp3")
+const source_19 = new AudioSource(clip_19)
+
+//Add audio source to the main cube GLB file (so position is good) - change LPMcube to the name of the Artists cube entity
+cube_19.addComponent(source_19)
+
+// Audio can loop, true or false, change volume here too
+source_19.loop = true
+source_19.volume = 10
+
+
+// Create TriggerBox for audio to play only inside the cube
+
+const trigger_19 = new Entity();
+trigger_19.addComponent(new BoxShape()),
+trigger_19.getComponent(BoxShape).withCollisions = false
+trigger_19.getComponent(BoxShape).visible = false
+
+
+trigger_19.addComponent(new Transform({
+  position: new Vector3(11.2 , 0, 279.9)
+}));
+
+let triggerBox_19 = new utils.TriggerBoxShape(
+  new Vector3 (12, 12, 12),
+  new Vector3(0, 13, 0)
+);
+
+
+// Toggle audio on and off when entering / exiting the cube
+
+trigger_19.addComponent(
+  new utils.TriggerComponent(
+    triggerBox_19,
+    {
+      onCameraEnter : () => {
+        log('play audio')
+        source_19.playing = true
+      },
+      onCameraExit : () => {
+        log('stop audio')
+        source_19.playing = false
+    },
+
+  //enableDebug: true
+      }
+  )
+)
+log('added new triggerbox')
+engine.addEntity(trigger_19)
+
+// END Leah Smithson audio
+
+
+/// Audio cube_21 Morteeeza
+//create audio clip and source
+
+const clip_21 = new AudioClip("sounds/MORTEEEZA.mp3")
+const source_21 = new AudioSource(clip_21)
+
+//Add audio source to the main cube GLB file (so position is good) - change LPMcube to the name of the Artists cube entity
+cube_21.addComponent(source_21)
+
+// Audio can loop, true or false, change volume here too
+source_21.loop = true
+source_21.volume = 10
+
+
+// Create TriggerBox for audio to play only inside the cube
+
+const trigger_21 = new Entity();
+trigger_21.addComponent(new BoxShape()),
+trigger_21.getComponent(BoxShape).withCollisions = false
+trigger_21.getComponent(BoxShape).visible = false
+
+
+trigger_21.addComponent(new Transform({
+  position: new Vector3(23.8, -.125, 310.2)
+}));
+
+let triggerBox_21 = new utils.TriggerBoxShape(
+  new Vector3 (12, 12, 12),
+  new Vector3(0, 13, 0)
+);
+
+
+// Toggle audio on and off when entering / exiting the cube
+
+trigger_21.addComponent(
+  new utils.TriggerComponent(
+    triggerBox_21,
+    {
+      onCameraEnter : () => {
+        log('play audio')
+        source_21.playing = true
+      },
+      onCameraExit : () => {
+        log('stop audio')
+        source_21.playing = false
+    },
+
+  //enableDebug: true
+      }
+  )
+)
+log('added new triggerbox')
+engine.addEntity(trigger_21)
+
+//END audio Morteeeza
+
+
+// Audio cube_23 Hyperdavy
+//create audio clip and source
+
+const clip_23 = new AudioClip("sounds/HYPERDAVY.mp3")
+const source_23 = new AudioSource(clip_23)
+
+//Add audio source to the main cube GLB file (so position is good) - change LPMcube to the name of the Artists cube entity
+cube_23.addComponent(source_23)
+
+// Audio can loop, true or false, change volume here too
+source_23.loop = true
+source_23.volume = 10
+
+
+// Create TriggerBox for audio to play only inside the cube
+
+const trigger_23 = new Entity();
+trigger_23.addComponent(new BoxShape()),
+trigger_23.getComponent(BoxShape).withCollisions = false
+trigger_23.getComponent(BoxShape).visible = false
+
+
+trigger_23.addComponent(new Transform({
+  position: new Vector3(54.2, -.125, 296.2)
+}));
+
+let triggerBox_23 = new utils.TriggerBoxShape(
+  new Vector3 (12, 12, 12),
+  new Vector3(0, 13, 0)
+);
+
+
+// Toggle audio on and off when entering / exiting the cube
+
+trigger_23.addComponent(
+  new utils.TriggerComponent(
+    triggerBox_23,
+    {
+      onCameraEnter : () => {
+        log('play audio')
+        source_23.playing = true
+      },
+      onCameraExit : () => {
+        log('stop audio')
+        source_23.playing = false
+    },
+
+  //enableDebug: true
+      }
+  )
+)
+log('added new triggerbox')
+engine.addEntity(trigger_23)
+
+//END audio Hyperdavy
+
+
+// Audio cube_26 Jikke Lesterhuis
+//create audio clip and source
+
+const clip_26 = new AudioClip("sounds/JIKKE.mp3")
+const source_26 = new AudioSource(clip_26)
+
+//Add audio source to the main cube GLB file (so position is good) - change LPMcube to the name of the Artists cube entity
+cube_26.addComponent(source_26)
+
+// Audio can loop, true or false, change volume here too
+source_26.loop = true
+source_26.volume = 10
+
+
+// Create TriggerBox for audio to play only inside the cube
+
+const trigger_26 = new Entity();
+trigger_26.addComponent(new BoxShape()),
+trigger_26.getComponent(BoxShape).withCollisions = false
+trigger_26.getComponent(BoxShape).visible = false
+
+
+trigger_26.addComponent(new Transform({
+  position: new Vector3(54.2, -.125, 296.2)
+}));
+
+let triggerBox_26 = new utils.TriggerBoxShape(
+  new Vector3 (12, 12, 12),
+  new Vector3(0, 13, 0)
+);
+
+
+// Toggle audio on and off when entering / exiting the cube
+
+trigger_26.addComponent(
+  new utils.TriggerComponent(
+    triggerBox_26,
+    {
+      onCameraEnter : () => {
+        log('play audio')
+        source_26.playing = true
+      },
+      onCameraExit : () => {
+        log('stop audio')
+        source_26.playing = false
+    },
+
+  //enableDebug: true
+      }
+  )
+)
+log('added new triggerbox')
+engine.addEntity(trigger_26)
+
+//END audio Jikke
+
+
+// Audio cube_28 Rebecca Rose
+//create audio clip and source
+
+const clip_28 = new AudioClip("sounds/REBECCA.mp3")
+const source_28 = new AudioSource(clip_28)
+
+//Add audio source to the main cube GLB file (so position is good) - change LPMcube to the name of the Artists cube entity
+cube_26.addComponent(source_28)
+
+// Audio can loop, true or false, change volume here too
+source_28.loop = true
+source_28.volume = 10
+
+
+// Create TriggerBox for audio to play only inside the cube
+
+const trigger_28 = new Entity();
+trigger_28.addComponent(new BoxShape()),
+trigger_28.getComponent(BoxShape).withCollisions = false
+trigger_28.getComponent(BoxShape).visible = false
+
+
+trigger_28.addComponent(new Transform({
+  position: new Vector3(54.2, -.125, 296.2)
+}));
+
+let triggerBox_28 = new utils.TriggerBoxShape(
+  new Vector3 (12, 12, 12),
+  new Vector3(0, 13, 0)
+);
+
+
+// Toggle audio on and off when entering / exiting the cube
+
+trigger_28.addComponent(
+  new utils.TriggerComponent(
+    triggerBox_28,
+    {
+      onCameraEnter : () => {
+        log('play audio')
+        source_28.playing = true
+      },
+      onCameraExit : () => {
+        log('stop audio')
+        source_28.playing = false
+    },
+
+  //enableDebug: true
+      }
+  )
+)
+log('added new triggerbox')
+engine.addEntity(trigger_28)
+
+//END audio Rebecca
