@@ -21,8 +21,10 @@ const aiscape_02= new VideoClip("videos/TAIGA_02.mp4")
 
 //VIDEO TEXTURES
 const waterTexture = new VideoTexture(watermp4)
-const taigaTexture1 = new VideoTexture(aiscape_01)
+const taigaTexture1 = new VideoTexture(aiscape_01, { wrap: 1, samplingMode: 1 })
 const taigaTexture2 = new VideoTexture(aiscape_02)
+
+
 
 //ALPHA LAYERS
 const semiTransparent = new Texture("images/alpha_transparent.png")
@@ -71,61 +73,102 @@ const sheet04 = new Material()
 
 // Water
 const waterMaterial = new Material()
+      waterMaterial.castShadows = false
       waterMaterial.albedoTexture = waterTexture
       waterMaterial.alphaTexture = semiTransparent
       waterMaterial.roughness = 1
       waterMaterial.specularIntensity = 0
-      waterMaterial.metallic = 0
+      waterMaterial.metallic = -2
 
 
-//ENTITES
+const point1 = new Vector3(32, .66, 160)
+const point2 = new Vector3(32, .8, 160)
 
 
-@Component("lerpData")
-export class LerpData {
-  origin: Vector3 = Vector3.Zero()
-  target: Vector3 = Vector3.Zero()
+const myPath = new Path3D([point1, point2])
+
+@Component("pathData")
+export class PathData {
+  origin: Vector3 = myPath.path[0]
+  target: Vector3 = myPath.path[1]
   fraction: number = 0
+  nextPathIndex: number = 1
 }
 
-// a system to carry out the movement
-export class LerpMove implements ISystem {
+export class PatrolPath implements ISystem {
   update(dt: number) {
     let transform = water1.getComponent(Transform)
-    let lerp = water1.getComponent(LerpData)
-    if (lerp.fraction < 1) {
-      transform.position = Vector3.Lerp(lerp.origin, lerp.target, lerp.fraction)
-      lerp.fraction += dt / 8
+    let path = water1.getComponent(PathData)
+    if (path.fraction < 1) {
+      transform.position = Vector3.Lerp(path.origin, path.target, path.fraction)
+      path.fraction += dt / 6
+    } else {
+      path.nextPathIndex += 1
+      if (path.nextPathIndex >= myPath.path.length) {
+        path.nextPathIndex = 0
+      }
+      path.origin = path.target
+      path.target = myPath.path[path.nextPathIndex]
+      path.fraction = 0
     }
   }
 }
 
-// Add system to engine
-engine.addSystem(new LerpMove())
+engine.addSystem(new PatrolPath())
 
 //water
 const water1 = new Entity()
-      water1.addComponent(new PlaneShape())
-      water1.addComponent(waterMaterial)
+const plane = new PlaneShape()
+      water1.addComponent(plane)
+
       water1.addComponent(pond)
       water1.getComponent(PlaneShape).withCollisions = false
       water1.getComponent(PlaneShape).visible = true
+      water1.addComponent(new PathData())
       water1.addComponent(new Transform({
           scale: new Vector3(316, 60, 1),
           rotation: Quaternion.Euler(90, 90, 0)
 }))
 engine.addEntity(water1)
+water1.addComponent(waterMaterial)
+plane.uvs = setUVs(4, 20)
+
+function setUVs(rows: number, cols: number) {
+  return [
+    // North side of unrortated plane
+    0, //lower-left corner
+    0,
+
+    cols, //lower-right corner
+    0,
+
+    cols, //upper-right corner
+    rows,
+
+    0, //upper left-corner
+    rows,
+
+    // South side of unrortated plane
+    cols, // lower-right corner
+    0,
+
+    0, // lower-left corner
+    0,
+
+    0, // upper-left corner
+    rows,
+
+    cols, // upper-right corner
+    rows,
+  ]
+}
+
 
 pond.playing = true
 pond.loop = true
 pond.volume = 0.25
 waterTexture.play()
 waterTexture.loop = true
-
-
-water1.addComponent(new LerpData())
-water1.getComponent(LerpData).origin = new Vector3(32, 0, 160),
-water1.getComponent(LerpData).target = new Vector3(32, .5, 160)
 
 //constant_01
 let constant_01 = new Entity()

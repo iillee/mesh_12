@@ -42,7 +42,7 @@
       "name": "spawn1",
       "default": true,
       "position": {
-        "x": 26,
+        "x": 32,
         "y": 2,
         "z": 160
       },
