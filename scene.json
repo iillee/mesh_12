@@ -6,6 +6,9 @@
     "favicon": "favicon_asset"
   },
   "owner": "MESH",
+  "worldConfiguration" : {
+    "name": "ile.dcl.eth"
+  },
   "contact": {
     "name": "＼(^o^)／",
     "email": "lukeeescobar@gmail.com"
