@@ -56,6 +56,7 @@ createMichelleScene();
 createDevScene();
 createNyankeeScene();
 createLejinScene();
+
 createTripuraScene();
 createDanScene();
 createAlexScene();
@@ -71,11 +72,11 @@ createJikkeScene();
 createAlphacodedScene();
 createRebeccaScene()
 
+
+
 //CUBES
 
-//Courtyard 01 (SOUTH)
-
-//cube_01 Stephan Duquesnoyc
+//cube_01 Stephan Duquesnoyc - see 01_stephan.ts - assembled by Bay
 
 //cube_02 V4W2 - see 02_V4wb.ts - assembled by Bay
 
