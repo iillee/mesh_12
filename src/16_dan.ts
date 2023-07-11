@@ -19,7 +19,7 @@ meshCUBEBETA.addComponent(new Transform({
     rotation: new Quaternion(0, 0, 0, 1),
     scale: new Vector3(1, 1, 1)
 }));
-meshCUBEBETA.addComponent(new GLTFShape("models/MESH CUBE BETA.glb"));
+meshCUBEBETA.addComponent(new GLTFShape("models/MESH CUBE_DAK_solo_cube.glb"));
 
 const danLinkButton = new GLTFShape("models/hiper.glb");
         
