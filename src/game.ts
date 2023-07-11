@@ -4,7 +4,7 @@ import { createBaseScene } from './base';
 import { createShellScene } from './shells';
 import { createScreensScene } from './screens';
 import { createWaterScene } from './water';
-import { createDevVideoScene } from './devVideo';
+//import { createDevVideoScene } from './devVideo'; this code is now in ./12_dev
 
 import { createStephanScene } from './01_stephan';
 import { createV4wbScene } from './02_v4wb';
@@ -40,7 +40,7 @@ createBaseScene();
 createShellScene();
 createScreensScene();
 createWaterScene();
-createDevVideoScene();
+//createDevVideoScene();
 
 createStephanScene();
 createV4wbScene();
