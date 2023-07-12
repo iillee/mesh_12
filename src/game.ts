@@ -1,5 +1,6 @@
 //IMPORTS
 import * as utils from '@dcl/ecs-scene-utils';
+
 import { createBaseScene } from './base';
 import { createShellScene } from './shells';
 import { createScreensScene } from './screens';
@@ -29,7 +30,7 @@ import { createMattiaScene } from './20_mattia';
 import { createMorteezaScene } from './21_morteeza';
 import { createMicahScene } from './22_micah';
 import { createHyperdavyScene } from './23_hyperdavy';
-import { createIvanScene } from './24_ivan';
+import { createOgiworldsScene } from './24_ogiworlds';
 import { createKrushScene } from './25_krush';
 import { createJikkeScene } from './26_jikke';
 import { createAlphacodedScene } from './27_alphacoded';
@@ -66,7 +67,7 @@ createMattiaScene();
 createMorteezaScene();
 createMicahScene();
 createHyperdavyScene();
-createIvanScene();
+createOgiworldsScene();
 createKrushScene();
 createJikkeScene();
 createAlphacodedScene();

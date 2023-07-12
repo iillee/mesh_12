@@ -5,7 +5,7 @@ export function createMorteezaScene() {
   /// Audio cube_21 Morteeeza
   //create audio clip and source
 
-  const clip_21 = new AudioClip("sounds/MORTEEEZA.mp3")
+  const clip_21 = new AudioClip("sounds/Apeire_02.mp3")
   const source_21 = new AudioSource(clip_21)
 
   // Audio can loop, true or false, change volume here too
@@ -14,16 +14,16 @@ export function createMorteezaScene() {
 
   // Create entity and add glb
   let cube_21 = new Entity()
-  let cube_21Path:string = "models/cube_02.glb"
+  let cube_21Path:string = "models/OGIWORLDS2.glb"
       cube_21.addComponent(new GLTFShape(cube_21Path))
       cube_21.addComponent(new Transform({
-          position: new Vector3(23.8, -.125, 310.2),
+          position: new Vector3(24, -.125, 308.5),
           scale: new Vector3(1, 1, 1),
-          rotation: Quaternion.Euler(0, 0, 0)
+          rotation: Quaternion.Euler(0, 270, 0)
   }))
   engine.addEntity(cube_21)
 
-  //Add audio source to the main cube GLB file (so position is good) - change LPMcube to the name of the Artists cube entity
+  //Add audio source to the mainw cube GLB file (so position is good) - change LPMcube to the name of the Artists cube entity
   cube_21.addComponent(source_21)
 
   // Create TriggerBox for audio to play only inside the cube

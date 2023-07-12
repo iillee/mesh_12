@@ -475,7 +475,7 @@ engine.addEntity(shell_25)
         openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
       },
       {
-            hoverText: "XXX by XXX",
+            hoverText: "Wind Dwellers by Jikke Lesterhuis",
             distance: 24
       }))
  engine.addEntity(shell_26)
@@ -493,7 +493,7 @@ let shell_27 = new Entity()
         openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
       },
       {
-            hoverText: "xxx by xxx",
+            hoverText: "A Portal to Another World by ALPHACODED",
             distance: 24
       }))
 engine.addEntity(shell_27)

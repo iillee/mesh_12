@@ -9,7 +9,7 @@ const artistAlpha = new Texture("images/alpha_artists.png")
 
 // Materials
 const artistMaterial = new Material()
-      artistMaterial.castShadows = false
+      artistMaterial.castShadows = true
       artistMaterial.albedoTexture = artistTexture
       artistMaterial.alphaTexture = artistAlpha
       artistMaterial.roughness = 1
