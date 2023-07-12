@@ -5,7 +5,7 @@ export function createMorteezaScene() {
   /// Audio cube_21 Morteeeza
   //create audio clip and source
 
-  const clip_21 = new AudioClip("sounds/Apeire_02.mp3")
+  const clip_21 = new AudioClip("sounds/pulsar.mp3")
   const source_21 = new AudioSource(clip_21)
 
   // Audio can loop, true or false, change volume here too
@@ -14,10 +14,10 @@ export function createMorteezaScene() {
 
   // Create entity and add glb
   let cube_21 = new Entity()
-  let cube_21Path:string = "models/OGIWORLDS2.glb"
+  let cube_21Path:string = "models/MORTEEEZA.glb"
       cube_21.addComponent(new GLTFShape(cube_21Path))
       cube_21.addComponent(new Transform({
-          position: new Vector3(24, -.125, 308.5),
+          position: new Vector3(24, -.09, 308.6),
           scale: new Vector3(1, 1, 1),
           rotation: Quaternion.Euler(0, 270, 0)
   }))

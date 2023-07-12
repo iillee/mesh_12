@@ -117,13 +117,13 @@ createRebeccaScene()
 
 //cube_20 Mattia Cuttini - see 20_mattia.ts - assembled by Bay
 
-//cube_21 Morteeeza - see 21_morteeza.ts - assembled by Bay - (CUBE GLB NOT YET ADDED)
+//cube_21 Morteeeza - see 21_morteeza.ts - assembled by Bay
 
 //cube_22 Micah Alhadeff - see 22_micah.ts - assembled by KJ
 
 //cube_23 Hyperdavy - see 23_hyperdavy.ts - assembled by Bay
 
-//cube_24 Ivan Hugo - see 24_ivan.ts - assembled by Bay (needs correction)
+//cube_24 OGIWORLDS2 - see 24_ivan.ts - assembled by Bay
 
 //cube_25 Krush - see 25_krush.ts - assembled by Luke
 
