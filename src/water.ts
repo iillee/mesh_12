@@ -1,7 +1,7 @@
 export function createWaterScene() {
 
 const watermp4 = new VideoClip("videos/water23.mp4")
-const visiblemp4 = new VideoClip("videos/water.mp4")
+const visiblemp4 = new VideoClip("videos/test.mp4")
 
 //VIDEO TEXTURES
 const waterTexture = new VideoTexture(watermp4)
@@ -21,12 +21,12 @@ const waterMaterial = new Material()
       waterMaterial.alphaTexture = waterTexture
       waterMaterial.roughness = 1
       waterMaterial.specularIntensity = 0
-      waterMaterial.metallic = -1
+      waterMaterial.metallic = -1.5
 
 //water
 
 const plane = new PlaneShape()
-      plane.uvs = setUVs(4, 20)
+      plane.uvs = setUVs(2, 10)
 
 const water1 = new Entity()
       water1.addComponent(plane)

@@ -58,7 +58,7 @@ export function createLejinScene() {
           source_14.playing = false
       },
 
-    //enableDebug: true
+    enableDebug: false
         }
     )
   )

@@ -35,7 +35,7 @@ export function createRebeccaScene() {
 
   let triggerBox_28 = new utils.TriggerBoxShape(
     new Vector3 (12, 12, 12),
-    new Vector3(0, 13, 0)
+    new Vector3(0, 14, 0)
   );
 
 
