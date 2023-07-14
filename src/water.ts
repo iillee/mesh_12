@@ -42,8 +42,8 @@ const water1 = new Entity()
           rotation: Quaternion.Euler(90, 90, 0)
 }))
 let triggerBox_water = new utils.TriggerBoxShape(
-  new Vector3 (32, 1, 320),
-  new Vector3(0, 13, 0)
+  new Vector3 (54, 1, 320),
+  new Vector3(0, 1.5, 0)
 );
 
 // Toggle audio on and off when entering / exiting the cube
@@ -211,7 +211,7 @@ function setUVs(rows: number, cols: number) {
 
 pond.playing = true
 pond.loop = true
-pond.volume = 0.25
+pond.volume = 1
 waterTexture.play()
 waterTexture.loop = true
 colorTexture.play()

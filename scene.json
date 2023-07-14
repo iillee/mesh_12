@@ -1,13 +1,13 @@
 {
   "display": {
     "title": "MESH 2023",
-    "description": "Scene Layout",
+    "description": "The head hurts, but the heart knows the truth",
     "navmapThumbnail": "images/scene-thumbnail.png",
     "favicon": "favicon_asset"
   },
   "owner": "MESH",
   "contact": {
-    "name": "＼(^o^)／",
+    "name": "Vueltta + ile",
     "email": "lukeeescobar@gmail.com"
   },
   "main": "bin/game.js",
