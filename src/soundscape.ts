@@ -1,59 +1,52 @@
 export function createSoundScapeScene() {
 
 //SOUNDS
-const sound03 = new AudioClip("sounds/D.I.E.T.R.I.C.H. - P R O V I D E N C I A - 04 SEOUL 1988.mp3")
-const pond = new AudioSource(sound03)
+const nostalgia = new AudioClip("sounds/D.I.E.T.R.I.C.H. - P R O V I D E N C I A - 04 SEOUL 1988.mp3")
+const music = new AudioSource(nostalgia)
 
-//water
-const plane = new PlaneShape()
-      plane.uvs = setUVs(4, 20)
+//Material 01 - Cycles white
+const material01 = new Material()
+      material01.albedoColor = Color3.White()
+      material01.metallic = 0
+      material01.roughness = 1
 
-const main = new Entity()
-      main.addComponent(plane)
-      main.addComponent(pond)
-      main.getComponent(PlaneShape).withCollisions = false
-      main.getComponent(PlaneShape).visible = false
-      main.addComponent(new Transform({
-          position: new Vector3(32, 5, 160 ),
-          scale: new Vector3(316, 60, 1),
-          rotation: Quaternion.Euler(90, 90, 0)
+      class ColorSystem1 {
+                  fraction:number = 0
+                  direction: number = 1
+
+                  update(dt:number){
+                      this.fraction += this.direction * dt * 0.25
+                      if(this.fraction > 1){
+                          this.fraction = 1
+                          this.direction = -1
+
+                      } else if(this.fraction < 0){
+                        this.fraction = 0
+                        this.direction = 1
+
+                    }
+                      material01.albedoColor = Color4.Lerp(new Color4(3, 3, 3, 1), new Color4(1.5, 1.5, 1.5, .5), this.fraction)
+                  }
+              }
+engine.addSystem(new ColorSystem1())
+
+//Constant - orb (trigger signifyer)
+const box = new Entity()
+box.addComponent(new BoxShape())
+box.getComponent(BoxShape).withCollisions = false
+box.getComponent(BoxShape).visible = false
+box.addComponent(material01)
+box.addComponent(music)
+box.addComponent(new Transform({
+        position: new Vector3(32, 6, 160),
+        scale: new Vector3(1, 1, 1)
 }))
-engine.addEntity(main)
+engine.addEntity(box)
+
+music.playing = false
+music.loop = true
+music.volume = 0.25
 
 
-function setUVs(rows: number, cols: number) {
-  return [
-    // North side of unrortated plane
-    0, //lower-left corner
-    0,
-
-    cols, //lower-right corner
-    0,
-
-    cols, //upper-right corner
-    rows,
-
-    0, //upper left-corner
-    rows,
-
-    // South side of unrortated plane
-    cols, // lower-right corner
-    0,
-
-    0, // lower-left corner
-    0,
-
-    0, // upper-left corner
-    rows,
-
-    cols, // upper-right corner
-    rows,
-  ]
-}
-
-
-pond.playing = true
-pond.loop = true
-pond.volume = 0.25
 
 }

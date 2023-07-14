@@ -1,3 +1,5 @@
+import * as utils from '@dcl/ecs-scene-utils';
+
 export function createWaterScene() {
 
 const watermp4 = new VideoClip("videos/water23.mp4")
@@ -39,6 +41,30 @@ const water1 = new Entity()
           scale: new Vector3(316, 60, 1),
           rotation: Quaternion.Euler(90, 90, 0)
 }))
+let triggerBox_water = new utils.TriggerBoxShape(
+  new Vector3 (32, 1, 320),
+  new Vector3(0, 13, 0)
+);
+
+// Toggle audio on and off when entering / exiting the cube
+water1.addComponent(
+new utils.TriggerComponent(
+triggerBox_water,
+{
+onCameraEnter : () => {
+  log('play audio')
+  pond.playing = true
+},
+onCameraExit : () => {
+  log('stop audio')
+  pond.playing = false
+},
+
+enableDebug: false
+}
+)
+)
+log('added new triggerbox')
 engine.addEntity(water1)
 
 const water2 = new Entity()
