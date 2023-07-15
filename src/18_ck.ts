@@ -39,8 +39,8 @@ ckscreen1.setParent(ck_scene);
 ckscreen1.addComponent(new PlaneShape());
 ckscreen1.addComponent(
   new Transform({
-    position: new Vector3(15.0, 13.95, 6.8424248695373535), 
-    rotation: Quaternion.Euler(0, 90, 0), 
+    position: new Vector3(15.0, 13.95, 6.8424248695373535),
+    rotation: Quaternion.Euler(0, 90, 0),
     scale: new Vector3(11.6, 11.6, 3.101372718811035)
   })
 );
@@ -54,8 +54,8 @@ ckscreen2.setParent(ck_scene);
 ckscreen2.addComponent(new PlaneShape());
 ckscreen2.addComponent(
   new Transform({
-    position: new Vector3(9.2, 13.95, 12.635), 
-    rotation: Quaternion.Euler(0, 180, 0), 
+    position: new Vector3(9.2, 13.95, 12.635),
+    rotation: Quaternion.Euler(0, 180, 0),
     scale: new Vector3(11.6, 11.6, 3.101372718811035)
   })
 );
@@ -69,8 +69,8 @@ ckscreen3.setParent(ck_scene);
 ckscreen3.addComponent(new PlaneShape());
 ckscreen3.addComponent(
   new Transform({
-    position: new Vector3(9.2, 13.95, 1.15), 
-    rotation: Quaternion.Euler(0, -180, 0), 
+    position: new Vector3(9.2, 13.95, 1.15),
+    rotation: Quaternion.Euler(0, -180, 0),
     scale: new Vector3(11.6, 11.6, 3.101372718811035)
   })
 );
@@ -84,8 +84,8 @@ ckscreen4.setParent(ck_scene);
 ckscreen4.addComponent(new PlaneShape());
 ckscreen4.addComponent(
   new Transform({
-    position: new Vector3(3.48, 13.95, 6.8424248695373535), 
-    rotation: Quaternion.Euler(0, 90, 0), 
+    position: new Vector3(3.48, 13.95, 6.8424248695373535),
+    rotation: Quaternion.Euler(0, 90, 0),
     scale: new Vector3(11.6, 11.6, 3.101372718811035)
   })
 );
@@ -99,8 +99,8 @@ ckscreen5.setParent(ck_scene);
 ckscreen5.addComponent(new PlaneShape());
 ckscreen5.addComponent(
   new Transform({
-    position: new Vector3(9.2, 19.5, 6.8424248695373535), 
-    rotation: Quaternion.Euler(90, 90, 0), 
+    position: new Vector3(9.2, 19.5, 6.8424248695373535),
+    rotation: Quaternion.Euler(90, 90, 0),
     scale: new Vector3(11.6, 11.6, 3.101372718811035)
   })
 );
@@ -128,7 +128,7 @@ ckcubefinal.addComponent(new GLTFShape("models/ck-mesh.glb"));
 
 
 /*
-///// Particle system 
+///// Particle system
 
 
 // Particles
@@ -218,7 +218,7 @@ engine.addSystem(new ParticleSystem())
 */
 
 
-// Trigger box 
+// Trigger box
 
 // Create TriggerBox for audio to play only inside the cube
 
@@ -247,12 +247,12 @@ cktrigger.addComponent(
       onCameraEnter : () => {
         log('play ck video')
         ckVideoTexture.play()
-        
+
       },
       onCameraExit : () => {
         log('stop ck video')
         ckVideoTexture.playing = false;
-        
+
     },
 
   //enableDebug: true
@@ -262,4 +262,3 @@ cktrigger.addComponent(
 log('added ck triggerbox');
 engine.addEntity(cktrigger)
     }
-  
