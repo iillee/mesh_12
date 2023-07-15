@@ -238,7 +238,7 @@ engine.addEntity(box17)
 
 music.playing = true
 music.loop = true
-music.volume = .25
+music.volume = .1
 
 
 
