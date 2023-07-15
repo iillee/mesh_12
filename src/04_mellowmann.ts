@@ -9,7 +9,7 @@ export function createMellowmannScene() {
 
   // Audio can loop, true or false, change volume here too
   source_04.loop = true
-  source_04.volume = 10
+  source_04.volume = 1
 
   //create entity and add glb
   let cube_04 = new Entity()
@@ -28,14 +28,12 @@ export function createMellowmannScene() {
   // Create TriggerBox for audio to play only inside the cube
 
   const trigger_04 = new Entity();
-  trigger_04.addComponent(new BoxShape()),
-  trigger_04.getComponent(BoxShape).withCollisions = false
-  trigger_04.getComponent(BoxShape).visible = false
-
-
-  trigger_04.addComponent(new Transform({
-    position: new Vector3(54.4, 0, 56.15)
-  }));
+        trigger_04.addComponent(new BoxShape()),
+        trigger_04.getComponent(BoxShape).withCollisions = false
+        trigger_04.getComponent(BoxShape).visible = false
+        trigger_04.addComponent(new Transform({
+          position: new Vector3(54.4, 0, 56.15)
+        }));
 
   let triggerBox_04 = new utils.TriggerBoxShape(
     new Vector3 (12, 12, 12),

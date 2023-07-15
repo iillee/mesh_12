@@ -9,7 +9,7 @@ export function createLindaScene() {
 
   // Audio can loop, true or false, change volume here too
   source_06.loop = true
-  source_06.volume = .1
+  source_06.volume = .05
 
   // create entity and add .glb
   let cube_06 = new Entity()

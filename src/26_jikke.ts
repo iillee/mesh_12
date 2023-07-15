@@ -32,7 +32,7 @@ export function createJikkeScene() {
   trigger_26.getComponent(BoxShape).withCollisions = false
   trigger_26.getComponent(BoxShape).visible = false
   trigger_26.addComponent(new Transform({
-    position: new Vector3(54.2, -.125, 296.2)
+    position: new Vector3(54.2, 1, 246.2)
   }));
   let triggerBox_26 = new utils.TriggerBoxShape(
     new Vector3 (12, 12, 12),
@@ -53,7 +53,7 @@ export function createJikkeScene() {
           source_26.playing = false
       },
 
-    //enableDebug: true
+    enableDebug: false
         }
     )
   )

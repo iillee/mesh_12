@@ -9,8 +9,8 @@ const danTransform = new Transform({
     rotation: Quaternion.Euler(0, 180, 0)
  });
 dan_scene.addComponentOrReplace(danTransform);
-   
-        
+
+
 const meshCUBEBETA = new Entity('meshCUBEBETA');
 engine.addEntity(meshCUBEBETA);
 meshCUBEBETA.setParent(dan_scene);
@@ -22,7 +22,7 @@ meshCUBEBETA.addComponent(new Transform({
 meshCUBEBETA.addComponent(new GLTFShape("models/MESH CUBE_DAK_solo_cube.glb"));
 
 const danLinkButton = new GLTFShape("models/hiper.glb");
-        
+
 const danLink = new Entity('danLink');
 engine.addEntity(danLink);
 danLink.setParent(dan_scene);
@@ -56,8 +56,8 @@ danLink2.addComponent(new OnPointerDown(() => {
 {
     hoverText: "Collect \"penny loAfeRs\" on OBJKT"
 }));
-     
-        
+
+
 const danLink3 = new Entity('danLink3');
 engine.addEntity(danLink3);
 danLink3.setParent(dan_scene);
@@ -73,8 +73,8 @@ danLink3.addComponent(new OnPointerDown(() => {
 {
     hoverText: "Collect \"SILLÓN rECLINaBLE\" on OBJKT"
 }));
-       
-        
+
+
 const danLink4 = new Entity('danLink4');
 engine.addEntity(danLink4);
 danLink4.setParent(dan_scene);
@@ -91,7 +91,7 @@ danLink4.addComponent(new OnPointerDown(() => {
     hoverText: "Collect \"trA$h dAy\" on OBJKT"
 }));
 
-        
+
 const danLink5 = new Entity('danLink5');
 engine.addEntity(danLink5);
 danLink5.setParent(dan_scene);
@@ -107,7 +107,7 @@ danLink5.addComponent(new OnPointerDown(() => {
 {
     hoverText: "Collect \"Junkin CommissARy VACUUM\" on OBJKT"
 }));
-        
+
 const danLink6 = new Entity('danLink6');
 engine.addEntity(danLink6);
 danLink6.setParent(dan_scene);
@@ -123,8 +123,8 @@ danLink6.addComponent(new OnPointerDown(() => {
 {
     hoverText: "Collect \"Free Sealy mAttRess\" on OBJKT"
 }));
-      
-        
+
+
 const danInstagramButtonLink = new Entity('danInstagramButtonLink');
 engine.addEntity(danInstagramButtonLink);
 danInstagramButtonLink.setParent(dan_scene);
@@ -145,7 +145,7 @@ danInstagramButtonLink.addComponent(new OnPointerDown(() => {
 {
     hoverText: "follow on Instagram"
 }));
-        
+
 const danTwitterButtonLink = new Entity('danTwitterButtonLink');
 engine.addEntity(danTwitterButtonLink);
 danTwitterButtonLink.setParent(dan_scene);
@@ -166,8 +166,8 @@ danTwitterButtonLink.addComponent(new OnPointerDown(() => {
 {
     hoverText: "follow on Twitter"
 }));
-       
-        
+
+
 const freeYarDARTCollidersDAK = new Entity('freeYarDARTCollidersDAK');
 engine.addEntity(freeYarDARTCollidersDAK);
 freeYarDARTCollidersDAK.setParent(dan_scene);
@@ -177,8 +177,8 @@ freeYarDARTCollidersDAK.addComponent(new Transform({
     scale: new Vector3(1, 1, 1)
   }));
 freeYarDARTCollidersDAK.addComponent(new GLTFShape("models/FREE_YarD_ART_colliders_DAK.glb"));
-        
-   
+
+
 // SOUND BOXES
 
 /// Audio cube_04 Mellowmann

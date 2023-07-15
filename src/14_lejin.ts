@@ -10,7 +10,7 @@ export function createLejinScene() {
 
   // Audio can loop, true or false, change volume here too
   source_14.loop = true
-  source_14.volume = 10
+  source_14.volume = 1
 
   let cube_14 = new Entity()
   let cube_14Path:string = "models/JIN2.glb"

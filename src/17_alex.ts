@@ -76,20 +76,20 @@ const alexnplane = new PlaneShape()
 alexnplane.uvs = [
   // inside
     0.5, 1,
-  
+
     0, 1,
-  
+
     0, 0.5,
-  
+
     0.5, 0.5,
 
   // outside
     0.5, 1,
-  
+
     0, 1,
-  
+
     0, 0.5,
-  
+
     0.5, 0.5,
   ]
 
@@ -155,20 +155,20 @@ const alexsplane = new PlaneShape()
 alexsplane.uvs = [
   // inside
     0.5, 0.5,
-  
-    0, 0.5, 
-  
+
+    0, 0.5,
+
     0, 0,
-  
+
     0.5, 0,
-  
+
   // outside
     0.5, 0.5,
-  
-    0, 0.5, 
-  
+
+    0, 0.5,
+
     0, 0,
-  
+
     0.5, 0,
   ]
 
@@ -197,20 +197,20 @@ const alexwplane = new PlaneShape()
 alexwplane.uvs = [
   // inside
     1, 0.5,
-  
+
     0.5, 0.5,
-  
+
     0.5, 0,
-  
+
     1, 0,
-    
+
   // outside
     1, 0.5,
-  
+
     0.5, 0.5,
-  
+
     0.5, 0,
-  
+
     1, 0,
   ]
 
@@ -239,20 +239,20 @@ const alexbplane = new PlaneShape()
 alexbplane.uvs = [
   // inside
     1, 0.5,
-  
+
     0.5, 0.5,
-  
+
     0.5, 0,
-  
+
     1, 0,
-    
+
   // outside
     1, 0.5,
-  
+
     0.5, 0.5,
-  
+
     0.5, 0,
-  
+
     1, 0,
   ]
 
@@ -272,7 +272,7 @@ engine.addEntity(alexBPlane)
 ///////////////////////////////////////////
 
 
-// Elevator 
+// Elevator
 const alexelevator = new Entity("alexelevator");
 alexelevator.setParent(alex_scene);
 engine.addEntity(alexelevator);
@@ -320,13 +320,13 @@ bowl.addComponent(new OnPointerDown(() => {
     alexvideoMaterial.texture = jetskiVideoTexture,
     jetskiVideoTexture.play(),
     alexSource.playing = false
-    
-    
+
+
 }))
 
 
 
-// Trigger box 
+// Trigger box
 
 // Create TriggerBox for audio to play only inside the cube
 
@@ -371,4 +371,3 @@ alextrigger.addComponent(
 log('added alex triggerbox');
 engine.addEntity(alextrigger)
     }
-    

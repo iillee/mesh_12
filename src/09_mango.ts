@@ -11,7 +11,7 @@ export function createMangoScene() {
 
   // Audio can loop, true or false, change volume here too
   source_09.loop = true
-  source_09.volume = .1
+  source_09.volume = .75
 
   //ceate entity and add .glb
   let cube_09 = new Entity()
