@@ -9,7 +9,7 @@ export function createLindaScene() {
 
   // Audio can loop, true or false, change volume here too
   source_06.loop = true
-  source_06.volume = 10
+  source_06.volume = .1
 
   // create entity and add .glb
   let cube_06 = new Entity()
@@ -39,7 +39,7 @@ export function createLindaScene() {
 
   let triggerBox_06 = new utils.TriggerBoxShape(
     new Vector3 (12, 12, 12),
-    new Vector3(0, 13, 0)
+    new Vector3(2, 14, -2)
   );
 
 
@@ -58,7 +58,7 @@ export function createLindaScene() {
           source_06.playing = false
       },
 
-    //enableDebug: true
+    enableDebug: false
         }
     )
   )

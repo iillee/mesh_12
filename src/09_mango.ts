@@ -11,7 +11,7 @@ export function createMangoScene() {
 
   // Audio can loop, true or false, change volume here too
   source_09.loop = true
-  source_09.volume = 10
+  source_09.volume = .1
 
   //ceate entity and add .glb
   let cube_09 = new Entity()
@@ -36,7 +36,7 @@ export function createMangoScene() {
 
 
   trigger_09.addComponent(new Transform({
-    position: new Vector3(11.7, 0, 25.6)
+    position: new Vector3(9.8, 1, 25.8)
   }));
 
   let triggerBox_09 = new utils.TriggerBoxShape(
@@ -60,7 +60,7 @@ export function createMangoScene() {
           source_09.playing = false
       },
 
-    //enableDebug: true
+    enableDebug: false
         }
     )
   )

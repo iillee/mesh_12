@@ -46,7 +46,7 @@ devVideoTexture.play();
 
 
 // Create trigger box
-// Trigger box 
+// Trigger box
 
 // Create TriggerBox for audio to play only inside the cube
 
@@ -57,7 +57,7 @@ devtrigger.getComponent(BoxShape).visible = false;
 
 
 devtrigger.addComponent(new Transform({
-  position: new Vector3(9.8, -.125, 73.7)
+  position: new Vector3(9.8, 1, 73.8)
 }));
 
 let devTrigger = new utils.TriggerBoxShape(
@@ -84,7 +84,7 @@ devtrigger.addComponent(
         //jetskiVideoTexture.playing = false
     },
 
-  //enableDebug: true
+  enableDebug: false
       }
   )
 );

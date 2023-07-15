@@ -39,7 +39,7 @@ box1.addComponent(material01)
 box1.addComponent(music)
 box1.addComponent(new Transform({
         position: new Vector3(32, 17, 32),
-        scale: new Vector3(1, 1, 1)
+        scale: new Vector3(0, 0, 0)
 }))
 engine.addEntity(box1)
 
@@ -51,7 +51,7 @@ box2.addComponent(material01)
 box2.addComponent(music)
 box2.addComponent(new Transform({
         position: new Vector3(32, 16, 48),
-        scale: new Vector3(1, 1, 1)
+        scale: new Vector3(0, 0, 0)
 }))
 engine.addEntity(box2)
 
@@ -64,7 +64,7 @@ box3.addComponent(material01)
 box3.addComponent(music)
 box3.addComponent(new Transform({
         position: new Vector3(32, 15, 64),
-        scale: new Vector3(1, 1, 1)
+        scale: new Vector3(0, 0, 0)
 }))
 engine.addEntity(box3)
 
@@ -76,7 +76,7 @@ box4.addComponent(material01)
 box4.addComponent(music)
 box4.addComponent(new Transform({
         position: new Vector3(32, 14, 80),
-        scale: new Vector3(1, 1, 1)
+        scale: new Vector3(0, 0, 0)
 }))
 engine.addEntity(box4)
 
@@ -88,7 +88,7 @@ box5.addComponent(material01)
 box5.addComponent(music)
 box5.addComponent(new Transform({
         position: new Vector3(32, 13, 96),
-        scale: new Vector3(1, 1, 1)
+        scale: new Vector3(0, 0, 0)
 }))
 engine.addEntity(box5)
 
@@ -100,7 +100,7 @@ box6.addComponent(material01)
 box6.addComponent(music)
 box6.addComponent(new Transform({
         position: new Vector3(32, 12, 112),
-        scale: new Vector3(1, 1, 1)
+        scale: new Vector3(0, 0, 0)
 }))
 engine.addEntity(box6)
 
@@ -112,7 +112,7 @@ box7.addComponent(material01)
 box7.addComponent(music)
 box7.addComponent(new Transform({
         position: new Vector3(32, 11, 128),
-        scale: new Vector3(1, 1, 1)
+        scale: new Vector3(0, 0, 0)
 }))
 engine.addEntity(box7)
 
@@ -124,7 +124,7 @@ box8.addComponent(material01)
 box8.addComponent(music)
 box8.addComponent(new Transform({
         position: new Vector3(32, 10, 144),
-        scale: new Vector3(1, 1, 1)
+        scale: new Vector3(0, 0, 0)
 }))
 engine.addEntity(box8)
 
@@ -136,7 +136,7 @@ box9.addComponent(material01)
 box9.addComponent(music)
 box9.addComponent(new Transform({
         position: new Vector3(32, 9, 160),
-        scale: new Vector3(1, 1, 1)
+        scale: new Vector3(0, 0, 0)
 }))
 engine.addEntity(box9)
 
@@ -148,7 +148,7 @@ box10.addComponent(material01)
 box10.addComponent(music)
 box10.addComponent(new Transform({
         position: new Vector3(32, 10, 176),
-        scale: new Vector3(1, 1, 1)
+        scale: new Vector3(0, 0, 0)
 }))
 engine.addEntity(box10)
 
@@ -160,7 +160,7 @@ box11.addComponent(material01)
 box11.addComponent(music)
 box11.addComponent(new Transform({
         position: new Vector3(32, 11, 192),
-        scale: new Vector3(1, 1, 1)
+        scale: new Vector3(0, 0, 0)
 }))
 engine.addEntity(box11)
 
@@ -172,7 +172,7 @@ box12.addComponent(material01)
 box12.addComponent(music)
 box12.addComponent(new Transform({
         position: new Vector3(32, 12, 208),
-        scale: new Vector3(1, 1, 1)
+        scale: new Vector3(0, 0, 0)
 }))
 engine.addEntity(box12)
 
@@ -184,7 +184,7 @@ box13.addComponent(material01)
 box13.addComponent(music)
 box13.addComponent(new Transform({
         position: new Vector3(32, 13, 224),
-        scale: new Vector3(1, 1, 1)
+        scale: new Vector3(0, 0, 0)
 }))
 engine.addEntity(box13)
 
@@ -196,7 +196,7 @@ box14.addComponent(material01)
 box14.addComponent(music)
 box14.addComponent(new Transform({
         position: new Vector3(32, 14, 240),
-        scale: new Vector3(1, 1, 1)
+        scale: new Vector3(0, 0, 0)
 }))
 engine.addEntity(box14)
 
@@ -208,7 +208,7 @@ box15.addComponent(material01)
 box15.addComponent(music)
 box15.addComponent(new Transform({
         position: new Vector3(32, 15, 256),
-        scale: new Vector3(1, 1, 1)
+        scale: new Vector3(0, 0, 0)
 }))
 engine.addEntity(box15)
 
@@ -220,7 +220,7 @@ box16.addComponent(material01)
 box16.addComponent(music)
 box16.addComponent(new Transform({
         position: new Vector3(32, 16, 272),
-        scale: new Vector3(1, 1, 1)
+        scale: new Vector3(0, 0, 0)
 }))
 engine.addEntity(box16)
 
@@ -232,13 +232,13 @@ box17.addComponent(material01)
 box17.addComponent(music)
 box17.addComponent(new Transform({
         position: new Vector3(32, 17, 288),
-        scale: new Vector3(1, 1, 1)
+        scale: new Vector3(0, 0, 0)
 }))
 engine.addEntity(box17)
 
 music.playing = true
 music.loop = true
-music.volume = .35
+music.volume = .25
 
 
 

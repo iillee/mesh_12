@@ -6,13 +6,12 @@ export function createMelodyScene() {
 //create audio clip and source
 const clip_05 = new AudioClip("sounds/MELODY.mp3")
 const source_05 = new AudioSource(clip_05)
-      source_05.loop = true
-      source_05.volume = 10
+source_05.loop = true
+source_05.volume = 1
 
 let cube_05 = new Entity()
 let cube_05Path:string = "models/MELODY.glb"
     cube_05.addComponent(new GLTFShape(cube_05Path))
-    cube_05.addComponent(source_05)
     cube_05.addComponent(new Transform({
         position: new Vector3(52.5, 0, 40.05),
         scale: new Vector3(1, 1, 1),
@@ -54,4 +53,21 @@ trigger_05.addComponent(
 )
 log('added new triggerbox')
 engine.addEntity(trigger_05)
+
+//Constant - orb (trigger signifyer)
+const box2 = new Entity()
+box2.addComponent(new BoxShape())
+box2.getComponent(BoxShape).withCollisions = false
+box2.getComponent(BoxShape).visible = false
+box2.addComponent(source_05)
+box2.addComponent(new Transform({
+  position: new Vector3(54.4, 10, 38.2),
+  scale: new Vector3(12, 3, 12),
+  rotation: Quaternion.Euler(0, 0, 0)
+}))
+engine.addEntity(box2)
+
+
+
+
 }

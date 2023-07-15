@@ -16,7 +16,7 @@ export function createMellowmannScene() {
   let cube_04Path:string = "models/MELLOWMANN.glb"
       cube_04.addComponent(new GLTFShape(cube_04Path))
       cube_04.addComponent(new Transform({
-          position: new Vector3(54.4, 0, 56.15),
+          position: new Vector3(54.0, -.2, 56.15),
           scale: new Vector3(1, 1, 1),
           rotation: Quaternion.Euler(0, 90, 0)
   }))
@@ -39,7 +39,7 @@ export function createMellowmannScene() {
 
   let triggerBox_04 = new utils.TriggerBoxShape(
     new Vector3 (12, 12, 12),
-    new Vector3(0, 13, 0)
+    new Vector3(0, 14, -2)
   );
 
 
@@ -58,7 +58,7 @@ export function createMellowmannScene() {
           source_04.playing = false
       },
 
-    //enableDebug: true
+    enableDebug: false
         }
     )
   )

@@ -13,7 +13,7 @@ export function createLejinScene() {
   source_14.volume = 10
 
   let cube_14 = new Entity()
-  let cube_14Path:string = "models/JIN.glb"
+  let cube_14Path:string = "models/JIN2.glb"
       cube_14.addComponent(new GLTFShape(cube_14Path))
       cube_14.addComponent(new Transform({
           position: new Vector3(11.42, 0, 104),
@@ -28,13 +28,11 @@ export function createLejinScene() {
   // Create TriggerBox for audio to play only inside the cube
 
   const trigger_14 = new Entity();
-  trigger_14.addComponent(new BoxShape()),
-  trigger_14.getComponent(BoxShape).withCollisions = false
-  trigger_14.getComponent(BoxShape).visible = false
-
-
-  trigger_14.addComponent(new Transform({
-    position: new Vector3(11.35, 0, 104)
+        trigger_14.addComponent(new BoxShape()),
+        trigger_14.getComponent(BoxShape).withCollisions = false
+        trigger_14.getComponent(BoxShape).visible = false
+        trigger_14.addComponent(new Transform({
+          position: new Vector3(9.7, 1, 105.75)
   }));
 
   let triggerBox_14 = new utils.TriggerBoxShape(

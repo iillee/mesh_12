@@ -18,7 +18,7 @@ let shell_01 = new Entity()
     }))
     shell_01.addComponent(
       new OnPointerDown(() => {
-        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+        openExternalURL("https://meshfair.com/artists/#01")
     },
     {
           hoverText: "Pre-highpolyists by Stephan Duquesnoy",
@@ -36,7 +36,7 @@ let shell_02 = new Entity()
     }))
     shell_02.addComponent(
       new OnPointerDown(() => {
-        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+        openExternalURL("https://meshfair.com/artists/#02")
       },
       {
             hoverText: "Space Modules by V4W.ENKO",
@@ -54,7 +54,7 @@ let shell_03 = new Entity()
     }))
     shell_03.addComponent(
       new OnPointerDown(() => {
-        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+        openExternalURL("https://meshfair.com/artists/#03/")
       },
       {
             hoverText: "Idle Hands by Hannes Hummel",
@@ -72,7 +72,7 @@ let shell_04 = new Entity()
     }))
     shell_04.addComponent(
       new OnPointerDown(() => {
-        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+        openExternalURL("https://meshfair.com/artists/#04")
       },
       {
             hoverText: "Marvellous Meowies Wonderland by Mellowmann",
@@ -90,7 +90,7 @@ let shell_05 = new Entity()
     }))
     shell_05.addComponent(
       new OnPointerDown(() => {
-        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+        openExternalURL("https://meshfair.com/artists/#05")
       },
       {
             hoverText: "The Volume of Language: FOXP2 AI by Melody Owen aka Pearl Hyacinth",
@@ -108,7 +108,7 @@ let shell_06 = new Entity()
     }))
     shell_06.addComponent(
       new OnPointerDown(() => {
-        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+        openExternalURL("https://meshfair.com/artists/#06")
       },
       {
             hoverText: "Crack by Linda Loh",
@@ -126,7 +126,7 @@ let shell_07 = new Entity()
     }))
     shell_07.addComponent(
       new OnPointerDown(() => {
-        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+        openExternalURL("https://meshfair.com/artists/#07")
       },
       {
             hoverText: "Brutal Cubes by warrragwag",
@@ -144,7 +144,7 @@ let shell_08 = new Entity()
     }))
     shell_08.addComponent(
       new OnPointerDown(() => {
-        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+        openExternalURL("https://meshfair.com/artists/#08")
       },
       {
             hoverText: "A WHITE WALL IS NOT by Martínez Siesta",
@@ -162,7 +162,7 @@ let shell_09 = new Entity()
     }))
     shell_09.addComponent(
       new OnPointerDown(() => {
-        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+        openExternalURL("https://meshfair.com/artists/#09")
       },
       {
             hoverText: "333Mujer by Mango",
@@ -180,7 +180,7 @@ let shell_10 = new Entity()
     }))
     shell_10.addComponent(
       new OnPointerDown(() => {
-        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+        openExternalURL("https://meshfair.com/artists/#10")
       },
       {
             hoverText: "Strokes of Once What Was by MickRenders",
@@ -198,7 +198,7 @@ let shell_11 = new Entity()
     }))
     shell_11.addComponent(
       new OnPointerDown(() => {
-        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+        openExternalURL("https://meshfair.com/artists/#11")
       },
       {
             hoverText: "Memphis Revisited by Michelle Brown aka @thebadlament",
@@ -216,7 +216,7 @@ let shell_12 = new Entity()
     }))
     shell_12.addComponent(
       new OnPointerDown(() => {
-        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+        openExternalURL("https://meshfair.com/artists/#12")
       },
       {
             hoverText: "Crash / Sites by Dev Harlan",
@@ -234,7 +234,7 @@ let shell_13 = new Entity()
     }))
     shell_13.addComponent(
       new OnPointerDown(() => {
-        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+        openExternalURL("https://meshfair.com/artists/#13")
       },
       {
             hoverText: "Fade Away Bunny Bread by Nyankee",
@@ -252,7 +252,7 @@ let shell_14 = new Entity()
     }))
     shell_14.addComponent(
       new OnPointerDown(() => {
-        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+        openExternalURL("https://meshfair.com/artists/#14")
       },
       {
             hoverText: "jin’s trilogy: air by Lejin Fan",
@@ -274,7 +274,7 @@ let shell_15 = new Entity()
     }))
     shell_15.addComponent(
       new OnPointerDown(() => {
-        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+        openExternalURL("https://meshfair.com/artists/#15")
       },
       {
             hoverText: "Warm Currents by Tripura",
@@ -292,7 +292,7 @@ let shell_16 = new Entity()
     }))
     shell_16.addComponent(
       new OnPointerDown(() => {
-        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+        openExternalURL("https://meshfair.com/artists/#16")
       },
       {
             hoverText: "FREE YarD ART by Dan Anthony Kelly",
@@ -310,7 +310,7 @@ let shell_17 = new Entity()
     }))
     shell_17.addComponent(
       new OnPointerDown(() => {
-        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+        openExternalURL("https://meshfair.com/artists/#17")
       },
       {
             hoverText: "Eagerness to Reach Those Lush Hills by Alex Adkinson",
@@ -328,7 +328,7 @@ let shell_18 = new Entity()
     }))
     shell_18.addComponent(
       new OnPointerDown(() => {
-        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+        openExternalURL("https://meshfair.com/artists/#18")
       },
       {
             hoverText: "The Waters of Lilaca by CKBubbles",
@@ -346,7 +346,7 @@ let shell_19 = new Entity()
     }))
     shell_19.addComponent(
       new OnPointerDown(() => {
-        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+        openExternalURL("https://meshfair.com/artists/#19")
       },
       {
             hoverText: "Soft Oblique Horizons by Leah Smithson",
@@ -364,7 +364,7 @@ let shell_20 = new Entity()
     }))
     shell_20.addComponent(
       new OnPointerDown(() => {
-        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+        openExternalURL("https://meshfair.com/artists/#20")
       },
       {
             hoverText: "Distanced Cube by Mattia Cuttini",
@@ -382,7 +382,7 @@ let shell_21 = new Entity()
     }))
     shell_21.addComponent(
       new OnPointerDown(() => {
-        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+        openExternalURL("https://meshfair.com/artists/#21")
       },
       {
             hoverText: "BLINDNESS by Morteeeza",
@@ -400,7 +400,7 @@ let shell_22 = new Entity()
     }))
     shell_22.addComponent(
       new OnPointerDown(() => {
-        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+        openExternalURL("https://meshfair.com/artists/#22")
       },
       {
             hoverText: "The Glitch Boutique by Micah Alhadeff",
@@ -418,7 +418,7 @@ let shell_23 = new Entity()
      }))
      shell_23.addComponent(
       new OnPointerDown(() => {
-        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+        openExternalURL("https://meshfair.com/artists/#23")
       },
       {
             hoverText: "Hyper Vanity by Hyperdavy",
@@ -436,10 +436,10 @@ let shell_23 = new Entity()
     }))
     shell_24.addComponent(
       new OnPointerDown(() => {
-        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+        openExternalURL("https://meshfair.com/artists/#24")
       },
       {
-            hoverText: "Glitch Pagan Altar by Ivan Hugo de Carvalho Cerqueira",
+            hoverText: "‘apeire synthesis’ (Infinite Assemblage) by OgiWorlds",
             distance: 24
       }))
  engine.addEntity(shell_24)
@@ -454,7 +454,7 @@ let shell_23 = new Entity()
     }))
     shell_25.addComponent(
       new OnPointerDown(() => {
-        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+        openExternalURL("https://meshfair.com/artists/#25")
       },
       {
             hoverText: "Krush 3D by Krush",
@@ -472,7 +472,7 @@ engine.addEntity(shell_25)
      }))
     shell_26.addComponent(
       new OnPointerDown(() => {
-        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+        openExternalURL("https://meshfair.com/artists/#26")
       },
       {
             hoverText: "Wind Dwellers by Jikke Lesterhuis",
@@ -490,7 +490,7 @@ let shell_27 = new Entity()
     }))
     shell_27.addComponent(
       new OnPointerDown(() => {
-        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+        openExternalURL("https://meshfair.com/artists/#27")
       },
       {
             hoverText: "A Portal to Another World by ALPHACODED",
@@ -508,7 +508,7 @@ let shell_28 = new Entity()
     }))
     shell_28.addComponent(
       new OnPointerDown(() => {
-        openExternalURL("https://www.atlasofplaces.com/architecture/usaf-aircraft-hangar/")
+        openExternalURL("https://meshfair.com/artists/#28")
       },
       {
             hoverText: "Man Upon Man by Rebecca Rose",
