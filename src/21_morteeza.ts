@@ -2,41 +2,42 @@ import * as utils from '@dcl/ecs-scene-utils';
 
 export function createMorteezaScene() {
 
-  /// Audio cube_21 Morteeeza
+  /// Audio cube_21
   //create audio clip and source
 
-  const clip_21 = new AudioClip("sounds/pulsar.mp3")
-  const source_21 = new AudioSource(clip_21)
+  const clip_05 = new AudioClip("sounds/pulsar.mp3")
+  const source_05 = new AudioSource(clip_05)
 
   // Audio can loop, true or false, change volume here too
-  source_21.loop = true
-  source_21.volume = 10
+  source_05.loop = true
+  source_05.volume = 1
 
-  // Create entity and add glb
-  let cube_21 = new Entity()
-  let cube_21Path:string = "models/MORTEEEZA.glb"
-      cube_21.addComponent(new GLTFShape(cube_21Path))
-      cube_21.addComponent(new Transform({
-          position: new Vector3(24, -.09, 308.6),
-          scale: new Vector3(1, 1, 1),
-          rotation: Quaternion.Euler(0, 270, 0)
+  //ceate entity and add .glb
+  let cube_05 = new Entity()
+  let cube_05Path:string = "models/MORTEEEZA.glb"
+      cube_05.addComponent(new GLTFShape(cube_05Path))
+      cube_05.addComponent(new Transform({
+        position: new Vector3(24, -.09, 308.6),
+        scale: new Vector3(1, 1, 1),
+        rotation: Quaternion.Euler(0, 270, 0)
   }))
-  engine.addEntity(cube_21)
+  engine.addEntity(cube_05)
 
-  //Add audio source to the mainw cube GLB file (so position is good) - change LPMcube to the name of the Artists cube entity
-  cube_21.addComponent(source_21)
+  //Add audio source to the main cube GLB file (so position is good) - change LPMcube to the name of the Artists cube entity
+  cube_05.addComponent(source_05)
 
   // Create TriggerBox for audio to play only inside the cube
 
-  const trigger_21 = new Entity();
-  trigger_21.addComponent(new BoxShape()),
-  trigger_21.getComponent(BoxShape).withCollisions = false
-  trigger_21.getComponent(BoxShape).visible = false
-  trigger_21.addComponent(new Transform({
-    position: new Vector3(25.8, -.125, 310.2)
+  const trigger_05 = new Entity();
+  trigger_05.addComponent(new BoxShape()),
+  trigger_05.getComponent(BoxShape).withCollisions = false
+  trigger_05.getComponent(BoxShape).visible = false
+  trigger_05.addComponent(new Transform({
+    position: new Vector3(25.8, 0, 310.2)
+
   }));
 
-  let triggerBox_21 = new utils.TriggerBoxShape(
+  let triggerBox_05 = new utils.TriggerBoxShape(
     new Vector3 (12, 12, 12),
     new Vector3(0, 13, 0)
   );
@@ -44,17 +45,17 @@ export function createMorteezaScene() {
 
   // Toggle audio on and off when entering / exiting the cube
 
-  trigger_21.addComponent(
+  trigger_05.addComponent(
     new utils.TriggerComponent(
-      triggerBox_21,
+      triggerBox_05,
       {
         onCameraEnter : () => {
           log('play audio')
-          source_21.playing = true
+          source_05.playing = true
         },
         onCameraExit : () => {
           log('stop audio')
-          source_21.playing = false
+          source_05.playing = false
       },
 
     enableDebug: false
@@ -62,9 +63,6 @@ export function createMorteezaScene() {
     )
   )
   log('added new triggerbox')
-  engine.addEntity(trigger_21)
-
-  //END audio Morteeeza
-
+  engine.addEntity(trigger_05)
 
 }

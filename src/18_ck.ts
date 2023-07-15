@@ -121,7 +121,7 @@ ckcubefinal.addComponent(new Transform({
     rotation: new Quaternion(0, 0, 0, 1),
     scale: new Vector3(1, 1, 1)
   }));
-ckcubefinal.addComponent(new GLTFShape("models/ck-mesh.glb"));
+ckcubefinal.addComponent(new GLTFShape("models/ck-mesh2.glb"));
 
 
 
