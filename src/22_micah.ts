@@ -159,7 +159,7 @@ animator8.addClip(clip8)
 //micahbaseScene.addComponent(new Transform({ position: new Vector3(8, 8, 8) }));
 
 // Create an AudioClip component, using the path to the audio file
-const micahclip = new AudioClip("sounds/GlitchAudio1.wav");
+const micahclip = new AudioClip("sounds/GlitchAudio1.mp3");
 
 // Create an AudioSource component, using the AudioClip
 const micahsource = new AudioSource(micahclip);
