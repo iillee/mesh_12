@@ -1,7 +1,7 @@
 import * as utils from '@dcl/ecs-scene-utils';
 
 
-export function createSoundscapeScene() {
+export function createSoundScapeScene() {
 
 //SOUNDS
 const bay = new AudioClip("sounds/MESH_voice.mp3")
@@ -11,7 +11,7 @@ voiceover.playing = true
 voiceover.loop = true
 voiceover.volume = 1
 
-const sound03 = new AudioClip("sounds/MESH_ENV_mixdown.mp3")
+const sound03 = new AudioClip("sounds/MESH_ENV_mixdown_STOP.mp3")
 const pond = new AudioSource(sound03)
 
 pond.playing = true

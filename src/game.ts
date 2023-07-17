@@ -5,7 +5,7 @@ import { createBaseScene } from './base';
 import { createShellScene } from './shells';
 import { createScreensScene } from './screens';
 import { createWaterScene } from './water';
-import { createSoundscapeScene } from './soundscape';
+import { createSoundScapeScene } from './soundscape';
 
 
 import { createStephanScene } from './01_stephan';
@@ -42,7 +42,7 @@ createBaseScene();
 createShellScene();
 createScreensScene();
 createWaterScene();
-createSoundscapeScene();
+createSoundScapeScene();
 
 createStephanScene();
 createV4wbScene();
