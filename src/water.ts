@@ -12,10 +12,6 @@ const colorTexture = new VideoTexture(visiblemp4)
 //ALPHA LAYERS
 const semiTransparent = new Texture("images/alpha_transparent.png")
 
-//SOUNDS
-const sound03 = new AudioClip("sounds/pond.mp3")
-const pond = new AudioSource(sound03)// WARNING:
-
 // Water
 const waterMaterial = new Material()
       waterMaterial.castShadows = false
@@ -26,13 +22,11 @@ const waterMaterial = new Material()
       waterMaterial.metallic = -2
 
 //water
-
 const plane = new PlaneShape()
       plane.uvs = setUVs(4, 20)
 
 const water1 = new Entity()
       water1.addComponent(plane)
-      water1.addComponent(pond)
       water1.addComponent(waterMaterial)
       water1.getComponent(PlaneShape).withCollisions = false
       water1.getComponent(PlaneShape).visible = true
@@ -41,30 +35,6 @@ const water1 = new Entity()
           scale: new Vector3(316, 60, 1),
           rotation: Quaternion.Euler(90, 90, 0)
 }))
-let triggerBox_water = new utils.TriggerBoxShape(
-  new Vector3 (54, 1, 320),
-  new Vector3(0, 1.5, 0)
-);
-
-// Toggle audio on and off when entering / exiting the cube
-water1.addComponent(
-new utils.TriggerComponent(
-triggerBox_water,
-{
-onCameraEnter : () => {
-  log('play audio')
-  pond.playing = true
-},
-onCameraExit : () => {
-  log('stop audio')
-  pond.playing = false
-},
-
-enableDebug: false
-}
-)
-)
-log('added new triggerbox')
 engine.addEntity(water1)
 
 const water2 = new Entity()
@@ -208,10 +178,6 @@ function setUVs(rows: number, cols: number) {
   ]
 }
 
-
-pond.playing = true
-pond.loop = true
-pond.volume = 1
 waterTexture.play()
 waterTexture.loop = true
 colorTexture.play()
